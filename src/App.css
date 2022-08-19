@@ -1,47 +1,58 @@
 *{
     margin: 0;
 }
-#reactApp{
-height: 300px;
-width: 400px;
-border: 1px solid red;
-display: flex;
+.App{
+    display: flex;
+    flex-direction: column;
+    height: 595px;
+    margin: 5px;
+    justify-content: space-between;
+}
+#navBar{
+    background-color: rgb(25, 142, 219);
+    color: white;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#divBody{
+    height: 72%;
+    display: flex;
+    justify-content: space-between;
+}
+#divBody div{
+    color: white;
+    display: flex;
+    align-items: center;
+}
+#bodyLeft{
 flex-flow: column;
-margin: 5% auto;
+height: 100%;
+width: 28%;
+background-color: white;
+justify-content: space-between;
 }
-#compHead{
-    border: 1px solid red;
-    width: 350px;
-    height: 15%;
-    margin: 4% auto 0 auto;
+#profile{
+background-color: rgb(25, 142, 219);
+height: 47%;
+width: 100%;
+justify-content: center;
 }
-#compBody{
-    width: 350px;
-    height: 60%;
-    margin: 2% auto;
-    display: flex;
-    justify-content: space-between;
+#trends{
+    background-color: rgb(25, 142, 219);
+    height: 48%;
+    width: 100%;
+    justify-content: center;
 }
-#compLeft{
-    border: 1px solid red;
-    width: 45%;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+#bodyMid{
+width: 40%;
+background-color: rgb(25, 142, 219);
+justify-content: center;
 }
-#compRight{
-    border: 1px solid red;
-    width: 45%;
-}
-#compLeftChild{
-    border: 1px solid red;
-    width: 90%;
-    height: 30%;
-    margin: auto;
-}
-#compRightChild{
-    border: 1px solid red;
-    margin: 8% auto;
-    height: 70%;
-    width: 80%;
+#bodyRight{
+height: 47%;
+width: 28%;
+background-color: rgb(25, 142, 219);
+justify-content: center;
 }
