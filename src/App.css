@@ -1,6 +1,47 @@
-.square{
-    list-style: square;
+*{
+    margin: 0;
 }
-.circle{
-    list-style:circle;
+#reactApp{
+height: 300px;
+width: 400px;
+border: 1px solid red;
+display: flex;
+flex-flow: column;
+margin: 5% auto;
+}
+#compHead{
+    border: 1px solid red;
+    width: 350px;
+    height: 15%;
+    margin: 4% auto 0 auto;
+}
+#compBody{
+    width: 350px;
+    height: 60%;
+    margin: 2% auto;
+    display: flex;
+    justify-content: space-between;
+}
+#compLeft{
+    border: 1px solid red;
+    width: 45%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+#compRight{
+    border: 1px solid red;
+    width: 45%;
+}
+#compLeftChild{
+    border: 1px solid red;
+    width: 90%;
+    height: 30%;
+    margin: auto;
+}
+#compRightChild{
+    border: 1px solid red;
+    margin: 8% auto;
+    height: 70%;
+    width: 80%;
 }

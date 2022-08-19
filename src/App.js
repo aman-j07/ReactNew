@@ -1,12 +1,9 @@
 import './App.css';
-import MobileOS from './components/MobileOS';
-import MobileManufacturers from './components/MobileManufacturers';
-
+import ReactApp from './components/ReactApp';
 function App() {
 return (
 <div className="App">
-<MobileOS />
-<MobileManufacturers />
+<ReactApp /> 
 </div>
 );
 }
