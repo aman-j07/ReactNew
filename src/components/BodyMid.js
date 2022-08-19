@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-
+import pic from './playground.png'
 class BodyMid extends Component {
   render() {
     return (
       <div id="bodyMid">
+        <img src={pic}></img>
         <h2>Playground</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
