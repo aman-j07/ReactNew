@@ -1,13 +1,19 @@
 import "./App.css";
-import BodyLeft from "./components/BodyLeft";
-import BodyMid from "./components/BodyMid";
-import BodyRight from "./components/BodyRight";
+import First from "./components/First";
+import Second from "./components/Second";
+import Third from "./components/Third";
+import Fourth from "./components/Fourth";
+import Fifth from "./components/Fifth";
+import Sixth from "./components/Sixth";
 function App() {
   return (
     <div className="App">
-      <BodyLeft />
-      <BodyMid />
-      <BodyRight />
+      <First />
+      <Second />
+      <Third />
+      <Fourth />
+      <Fifth />
+      <Sixth />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+#third{
+    height: 15%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+#playlists{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
+}
+#playlists div{
+    display: flex;
+    flex-flow: column;
+    height: 85%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#playlists div h3{
+    margin:6% 0;
+}
+#playlists div p{
+    font-size: 15px;
+}

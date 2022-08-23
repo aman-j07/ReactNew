@@ -1,0 +1,34 @@
+#second{
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+#powers{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 60%;
+}
+#powers div{
+    display: flex;
+    flex-flow: column;
+    height: 85%;
+    justify-content: flex-end;
+    align-items: center;
+}
+#powers div h3{
+    margin-bottom: 2%;
+}
+#powers div p{
+    font-size: 15px;
+}
+#icons{
+    font-size: 75px;
+    margin-bottom: 15%;
+}
+#iconsS{
+    font-size: 75px;
+    margin-bottom: 12%;
+}
