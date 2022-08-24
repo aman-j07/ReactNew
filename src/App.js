@@ -1,12 +1,12 @@
 import './App.css';
-import HelloWorldUsingDefault from './components/HelloWorld';
-import { HelloWorldUsingNamed } from './components/HelloWorld';
+import HelloWorldDefault from './components/HelloWorld';
+import { HelloWorldNamed } from './components/HelloWorld';
 
 function App() {
 return (
 <div className="App">
-<HelloWorldUsingDefault />
-<HelloWorldUsingNamed />
+<HelloWorldDefault />
+<HelloWorldNamed />
 </div>
 );
 }

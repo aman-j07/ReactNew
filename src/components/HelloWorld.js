@@ -1,12 +1,12 @@
 import React from 'react'
 
-const HelloWorldUsingDefault=()=>{
+const HelloWorlDefault=()=>{
 return <h1>Hello World! using default export</h1>
 }
 
-const HelloWorldUsingNamed=()=>{
+const HelloWorldNamed=()=>{
 return <h1>Hello World! using named export</h1>
 }
 
-export {HelloWorldUsingNamed}
-export default HelloWorldUsingDefault
+export {HelloWorldNamed}
+export default HelloWorlDefault
