@@ -1,34 +1,23 @@
 #second{
-    height: 12%;
+    height: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 1%;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    margin: auto;
+    width: 98%;
+}
+#second div{
+    width: 8%;
+    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
-#powers{
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    height: 60%;
+div img{
+    height: 65%;
 }
-#powers div{
-    display: flex;
-    flex-flow: column;
-    height: 85%;
-    justify-content: flex-end;
-    align-items: center;
-}
-#powers div h3{
-    margin-bottom: 2%;
-}
-#powers div p{
-    font-size: 15px;
-}
-#icons{
-    font-size: 75px;
-    margin-bottom: 15%;
-}
-#iconsS{
-    font-size: 75px;
-    margin-bottom: 12%;
+#second div p{
+    font-size: 14px;
+    font-weight: 600;
 }

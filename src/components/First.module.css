@@ -1,112 +1,82 @@
-.first{
-    height: 20%;
-}
-#header{
-    background-color: black;
-    height: 12%;
-    width: 100%;
+#first{
+    height: 7%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-#headerLeft{
-    display: flex;
-    align-items: center;
+    background-color: #2874f0;
     justify-content: center;
-    width: 50%;
-}
-#headerRight{
-    display: flex;
-    width: 50%;
-    justify-content: center;
-    font-size: 12px;
-}
-#headerRight > *{
-    margin: 0 4%;
-}
-#pipe{
+    align-items: center;
     color: white;
-    font-size: 15px;
-    margin: 0;
 }
-#iconSpotify{
-    color: white;
-    font-size: 30px;
-    margin: 0 5px;
-}
-.navbarItems{
-    text-decoration: none;
-    color:white;
-}
-#offers{    
-    height: 50%;
-    background-color: #3f51b5;
-    color: white;
+#divLogo{
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin: 0 1%;
 }
-#offers > *{
-    margin-bottom: 1%;
-}
-#btnStarted{
-    background-color: black;
-    color: white;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 3%;
-    width: 49%;
-    font-size: 9px;
-}
-#btnPlans{
-    background-color: #3f51b5;
-    color: white;
-    border: 1px solid white;
-    border-radius: 30px;
-    padding: 3%;
-    width: 49%;
-    font-size: 9px;
-}
-#offersButtons{
-    display: flex;
-    height: 12%;
-    width: 20%;
-    justify-content: space-between;
-}
-#tAndC{
-    display: flex;
-    font-size: 9px;
-}
-#tAndC a{
-    color: white;
-}
-#miniPlan{    
+#divLogo > *{
     height: 40%;
-    background-color: black;
-    color: white;
+    width: 90%;
+}
+#divPlus{
+    height: 20%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#miniPlan > *{
-    margin-bottom: 1%;
-}
-#miniPlan p{
-    margin: 2px 0;
-    font-size: 12px;
-}
-#aTAndC{
-    color: white;
-    font-size: 9px;
-}
-#btnMini{
-    background-color: white;
-    color: black;
-    border: 1px solid white;
-    border-radius: 30px;
+    font-style: italic;
     font-size: 11px;
-    padding: 5px 10px;
-    margin: 1% 0;
+    font-weight: 500;
+    align-items: flex-end;
+}
+#divPlus img{
+    height: 100%;
+    margin: 0 0% 1% 1%;
+}
+#paraPlus{
+    color: #ffe500;
+}
+#divSearch{
+    height: 65%;
+    border-radius: 2px;
+    display: flex;
+    padding: 0 1%;
+    width: 30%;
+    background-color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#divSearch input{
+    font-size: 14px;
+    width: 90%;
+    border: none;
+    height: 90%;
+}
+#searchIcon{
+ color: #2874f0;
+ font-size: 20px;
+}
+#btnLogin{
+    color: #2874f0;
+    font-weight: 600;
+    font-size: 15px;
+    background-color: #fff;
+    border-radius: 2px;
+    height: 60%;
+    width: 9%;
+    border: 1px solid #dbdbdb;
+    margin: 0 1%;
+}
+#seller,#paraMore{
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    margin: 0 1% 0 2%;
+}
+#cart{
+    width: 5%;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 1% 0 2%;
+}
+#cart > div{
+    display: flex;
+    justify-content: space-around;
+    color: white;
 }
