@@ -1,10 +1,11 @@
 import './App.css';
-import Hello from './components/HelloWorld';
-
+import MobileManufacturers from './components/MobileManufacturers';
+import MobileOS from './components/MobileOs';
 function App() {
 return (
 <div className="App">
-<Hello name="Aman"/>
+<MobileOS />
+<MobileManufacturers />
 </div>
 );
 }
