@@ -1,6 +1,8 @@
+import pic from './playground.png'
 const BodyMid=()=>{
     return (
       <div id="bodyMid">
+        <img src={pic}></img>
         <h2>Playground</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
