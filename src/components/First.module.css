@@ -1,0 +1,112 @@
+.first{
+    height: 20%;
+}
+#header{
+    background-color: black;
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#headerLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+#headerRight{
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    font-size: 12px;
+}
+#headerRight > *{
+    margin: 0 4%;
+}
+#pipe{
+    color: white;
+    font-size: 15px;
+    margin: 0;
+}
+#iconSpotify{
+    color: white;
+    font-size: 30px;
+    margin: 0 5px;
+}
+.navbarItems{
+    text-decoration: none;
+    color:white;
+}
+#offers{    
+    height: 50%;
+    background-color: #3f51b5;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#offers > *{
+    margin-bottom: 1%;
+}
+#btnStarted{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 3%;
+    width: 49%;
+    font-size: 9px;
+}
+#btnPlans{
+    background-color: #3f51b5;
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 3%;
+    width: 49%;
+    font-size: 9px;
+}
+#offersButtons{
+    display: flex;
+    height: 12%;
+    width: 20%;
+    justify-content: space-between;
+}
+#tAndC{
+    display: flex;
+    font-size: 9px;
+}
+#tAndC a{
+    color: white;
+}
+#miniPlan{    
+    height: 40%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#miniPlan > *{
+    margin-bottom: 1%;
+}
+#miniPlan p{
+    margin: 2px 0;
+    font-size: 12px;
+}
+#aTAndC{
+    color: white;
+    font-size: 9px;
+}
+#btnMini{
+    background-color: white;
+    color: black;
+    border: 1px solid white;
+    border-radius: 30px;
+    font-size: 11px;
+    padding: 5px 10px;
+    margin: 1% 0;
+}
