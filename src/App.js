@@ -1,17 +1,14 @@
-import "./App.css";
-import First from "./components/First";
-import Second from "./components/Second";
-import Third from "./components/Third";
-import Fourth from "./components/Fourth";
+import './App.css';
+import HelloWorldUsingDefault from './components/HelloWorld';
+import { HelloWorldUsingNamed } from './components/HelloWorld';
+
 function App() {
-  return (
-    <div className="App">
-      <First />
-      <Second />
-      <Third />
-      <Fourth />
-    </div>
-  );
+return (
+<div className="App">
+<HelloWorldUsingDefault />
+<HelloWorldUsingNamed />
+</div>
+);
 }
 
 export default App;
