@@ -1,20 +1,12 @@
 import React, { Component } from 'react'
 
-class HelloWorldUsingDefault extends Component {
-render() {
-return (
-<div>Hello World! using default export</div>
-)
-}
-}
-class HelloWorldUsingNamed extends Component {
-render() {
-return (
-<div>Hello World! using named export</div>
-)
-}
+class Hello extends Component {
+  render() {
+    return (
+      <h1>Hello {this.props.name}</h1>
+    )
+  }
 }
 
-export {HelloWorldUsingNamed}
-export default HelloWorldUsingDefault
 
+export default Hello
