@@ -1,11 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Child from './Child'
-export class Parent extends Component {
-  render() {
+const Parent=()=>{
     return (
      <Child num1='5' num2='6' operation="+"/>
          )
-  }
 }
 
 export default Parent
