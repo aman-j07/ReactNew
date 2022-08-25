@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class HelloName extends Component {
-  render() {
+const HelloName=(props)=>{
+  console.log(props)
+    const {name,surname}=props.fullname
     return (
-      <h1>Hello {this.props.name}</h1>
+      <h1>Hello {name} {surname}</h1>
     )
-  }
 }
 
 export default HelloName
