@@ -1,0 +1,11 @@
+import React, { Component } from 'react'
+
+class HelloName extends Component {
+  render() {
+    return (
+      <h1>Hello {this.props.name}</h1>
+    )
+  }
+}
+
+export default HelloName
