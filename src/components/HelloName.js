@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-
+import HelloNameChild from './HelloNameChild'
 class HelloName extends Component {
   render() {
     return (
-      <h1>Hello {this.props.name}</h1>
+      <HelloNameChild name={this.props.name} />
     )
   }
 }
