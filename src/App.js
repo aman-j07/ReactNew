@@ -1,10 +1,9 @@
 import './App.css';
-import Hello from './components/HelloWorld';
-
+import Card from './components/Card';
 function App() {
 return (
 <div className="App">
-<Hello name="Aman"/>
+<Card header="Header 1" color="blue" title="Primary Card Title" text="Some quick example text to build on the card title and make up the bulk of card's content"/>
 </div>
 );
 }
