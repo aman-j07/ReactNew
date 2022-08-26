@@ -1,10 +1,11 @@
+import React from 'react';
 import './App.css';
-import Hello from './components/Hello';
+import HelloWorld from './components/HelloWorld'
 
 function App() {
 return (
 <div className="App">
-<Hello name="Aman" surname="Jaiswal"/>
+<HelloWorld name="Aman" surname="Jaiswal"/>
 </div>
 );
 }

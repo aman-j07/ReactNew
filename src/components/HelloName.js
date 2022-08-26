@@ -1,10 +1,9 @@
 import React from 'react'
-
+import HelloNameChild from './HelloNameChild'
 const HelloName=(props)=>{
   console.log(props)
-    const {name,surname}=props.fullname
     return (
-      <h1>Hello {name} {surname}</h1>
+      <HelloNameChild fullname={props.fullname}/>
     )
 }
 
