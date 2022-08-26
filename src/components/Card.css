@@ -1,0 +1,35 @@
+.card{
+    padding: 1% 0 5% 0;
+    height: 145px;
+    margin: 1% 0;
+    color: white;
+    border-radius: 5px;
+}
+.card h3{
+    margin: 5% 0;
+}
+.details{
+    padding: 0 5%;
+}
+.details p{
+    margin: 0;
+}
+.header{
+    height: 25px;
+    padding: 5px;
+    /* border-width: 1px;
+    border-bottom-style: groove; */
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 4px 0px;
+}
+#blue{
+    background-color: blue;
+}
+#gray{
+    background-color: gray;
+}
+#green{
+    background-color: green;
+}
+#red{
+    background-color: red;
+}

@@ -1,18 +1,12 @@
 import './App.css';
-import Product from './components/Product';
-import basketball from './components/images/basketball.png'
-import football from './components/images/football.png'
-import soccer from './components/images/soccer.png'
-import tabletennis from './components/images/table-tennis.png'
-import tennis from './components/images/tennis.png'
+import Card from './components/Card';
 function App() {
   return (
     <div className="App">
-     <Product pic={basketball} name="Basketball" price="$90.00"/>
-     <Product pic={football} name="Rugby Ball" price="$150.00"/>
-     <Product pic={soccer} name="Football" price="$80.00"/>
-     <Product pic={tabletennis} name="Billiards Ball" price="$110.00"/>
-     <Product pic={tennis} name="Tennis Ball" price="$120.00"/>
+      <Card header="Header 1" color="blue" title="Primary Card" text="Some quick example text to build on the card title and make up the bulk of card's content" />
+      <Card header="Header 2" color="gray" title="Secondary Card" text="Some quick example text to build on the card title and make up the bulk of card's content" />
+      <Card header="Header 3" color="green" title="Success Card" text="Some quick example text to build on the card title and make up the bulk of card's content" />
+      <Card header="Header 4" color="red" title="Danger Card" text="Some quick example text to build on the card title and make up the bulk of card's content" />
     </div>
   );
 }
