@@ -16,7 +16,7 @@ class Countdown extends Component {
     this.minute=new Date().getMinutes();
     this.second=new Date().getSeconds();
     
-   setInterval(this.startCountDown,1000)
+   this.interval=setInterval(this.startCountDown,1000)
   }
   startCountDown=()=>{
      if(this.second>=1){
