@@ -12,9 +12,10 @@ class Countdown extends Component {
    }
  }
   setCountdown=()=>{
-    this.hour=new Date().getHours();
-    this.minute=new Date().getMinutes();
-    this.second=new Date().getSeconds();
+    let date=new Date();
+    this.hour=date.getHours();
+    this.minute=date.getMinutes();
+    this.second=date.getSeconds();
     
    this.interval=setInterval(this.startCountDown,1000)
   }
