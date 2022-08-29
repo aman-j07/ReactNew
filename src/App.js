@@ -1,9 +1,9 @@
 import './App.css';
-import Countdown from './components/Countdown';
+import Stopwatch from './components/Stopwatch';
 function App() {
   return (
    <div id="App">
-   <Countdown />
+   <Stopwatch/>
    </div>
   );
 }
