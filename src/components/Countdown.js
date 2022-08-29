@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 class Countdown extends Component {
-  hour;minute;second;
+  hour;minute;second;intervalCountdown;flag=0;
  constructor(props) {
    super(props)
  
@@ -12,12 +12,12 @@ class Countdown extends Component {
    }
  }
   setCountdown=()=>{
+    clearInterval(this.intervalCountdown)
     let date=new Date();
-    this.hour=date.getHours();
+    this.hour=date.getHours();    
     this.minute=date.getMinutes();
     this.second=date.getSeconds();
-    
-   this.interval=setInterval(this.startCountDown,1000)
+   this.intervalCountdown=setInterval(this.startCountDown,1000)
   }
   startCountDown=()=>{
      if(this.second>=1){
@@ -44,6 +44,8 @@ class Countdown extends Component {
         minute:this.minute,
         second:this.second
     })
+  
+  
   }
     render() {
     return (
