@@ -1,10 +1,11 @@
-import './App.css';
-import Countdown from './components/Countdown';
+import "./App.css";
+import AddItem from "./components/AddItem";
 function App() {
   return (
-   <div id="App">
-   <Countdown />
-   </div>
+    <div className="container">
+       <AddItem />
+     
+    </div>
   );
 }
 
