@@ -1,9 +1,9 @@
 import "./App.css";
-import Calculator from "./components/Calculator";
+import SearchSuggestion from "./components/SearchSuggestion";
 function App() {
   return (
     <div className="App">    
-       <Calculator/>
+       <SearchSuggestion/>
     </div>
   );
 }
