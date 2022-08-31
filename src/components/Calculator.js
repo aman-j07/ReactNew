@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 class Calculator extends Component {
   problem = "";
   answer = "";
+  flagDecimal = true;
   constructor(props) {
     super(props);
 
@@ -19,29 +20,29 @@ class Calculator extends Component {
     });
   };
   operation = (event) => {
+    this.flagDecimal = true;
     let last = this.problem.length - 1;
-    if (this.problem[last] === "+" ||this.problem[last] === "-" ||this.problem[last] === "*" ||this.problem[last] === "/" ) {
+    if (
+      this.problem[last] === "+" ||
+      this.problem[last] === "-" ||
+      this.problem[last] === "*" ||
+      this.problem[last] === "/"
+    ) {
       return;
-    } 
-    else if(this.problem==="" && (event.target.textContent==="/" || event.target.textContent==="*") ){
+    } else if (
+      this.problem === "" &&
+      (event.target.textContent === "/" || event.target.textContent === "*")
+    ) {
       return;
-    }
-    else {
-      this.problem+=event.target.textContent;
+    } else {
+      this.problem += event.target.textContent;
     }
     this.setState({
       problem: this.problem,
     });
   };
   decimal = (event) => {
-    let flag = false;
-    for (let i = 0; i < this.problem.length; i++) {
-      if (this.problem[i] === ".") {
-        flag = true;
-      }
-    }
-
-    if (flag === false) {
+    if (this.flagDecimal === true) {
       this.problem += event.target.textContent;
     } else {
       return;
@@ -49,13 +50,14 @@ class Calculator extends Component {
     this.setState({
       problem: this.problem,
     });
+    this.flagDecimal = false;
   };
   reset = () => {
     this.problem = "";
-    this.answer="";
+    this.answer = "";
     this.setState({
       problem: this.problem,
-      answer:this.answer
+      answer: this.answer,
     });
   };
   calculate = () => {
@@ -70,7 +72,12 @@ class Calculator extends Component {
     return (
       <div id="calculator">
         <Screen problem={this.state.problem} answer={this.state.answer} />
-        <Buttons number={this.number}operation={this.operation}decimal={this.decimal}reset={this.reset}calculate={this.calculate}
+        <Buttons
+          number={this.number}
+          operation={this.operation}
+          decimal={this.decimal}
+          reset={this.reset}
+          calculate={this.calculate}
         />
       </div>
     );
