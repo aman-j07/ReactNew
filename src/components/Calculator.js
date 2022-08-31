@@ -17,20 +17,21 @@ class Calculator extends Component {
     this.setState({
       problem: this.problem,
     });
-    console.log(this.problem)
   };
   operation = (event) => {
     let last = this.problem.length - 1;
     if (this.problem[last] === "+" ||this.problem[last] === "-" ||this.problem[last] === "x" ||this.problem[last] === "/" ) {
       return;
     } 
+    else if(this.problem==="" && (event.target.textContent==="/" || event.target.textContent==="*") ){
+      return;
+    }
     else {
       this.problem+=event.target.textContent;
     }
     this.setState({
       problem: this.problem,
     });
-    console.log(this.problem)
   };
   decimal = (event) => {
     let flag = false;
@@ -48,7 +49,6 @@ class Calculator extends Component {
     this.setState({
       problem: this.problem,
     });
-    console.log(this.problem)
   };
   reset = () => {
     this.problem = "";
@@ -57,10 +57,8 @@ class Calculator extends Component {
       problem: this.problem,
       answer:this.answer
     });
-    console.log(this.problem)
   };
   calculate = () => {
-    console.log(this.problem)
     this.answer = eval(this.problem);
     this.problem = "";
     this.setState({
