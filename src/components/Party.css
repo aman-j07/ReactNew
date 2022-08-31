@@ -1,0 +1,20 @@
+.party {
+  background-image: url(https://i.pinimg.com/736x/5a/88/e8/5a88e8614a42552169104e4194cbc388.jpg);
+}
+.party h1 {
+  margin: 13px 0 40px 0;
+  color: sienna;
+}
+.party button {
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border: 0;
+  border-radius: 30px;
+  font-family: system-ui;
+  color: purple;
+  box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+}

@@ -4,15 +4,17 @@
     display: flex;
 	align-items: center;
     justify-content: center;
-    background-color: aquamarine;
 }
-#change{
+.App >div{
 	height: 450px;
     width: 95%;
+	background-size: 100% 100%;
+	text-align: center;
 }
-.red{
-	background-color: red;
+button{
+	margin: 1%;
+	font-size: unset;
+    height: 40px;
+	width: 100px;
 }
-.blue{
-	background-color: blue;
-}
+
