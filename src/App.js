@@ -1,9 +1,11 @@
-import "./App.css";
-import Calculator from "./components/Calculator";
+import './App.css';
+import Navbar from './components/Navbar';
+import Banner from './components/Banner';
 function App() {
   return (
-    <div className="App">    
-       <Calculator/>
+    <div className="App">
+      <Navbar />
+      <Banner />
     </div>
   );
 }
