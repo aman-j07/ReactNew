@@ -59,6 +59,7 @@ class Calculator extends Component {
       problem: this.problem,
       answer: this.answer,
     });
+    this.flagDecimal = true;
   };
   calculate = () => {
     this.answer = eval(this.problem);
@@ -67,6 +68,7 @@ class Calculator extends Component {
       problem: this.problem,
       answer: this.answer,
     });
+  this.flagDecimal = true;
   };
   render() {
     return (
