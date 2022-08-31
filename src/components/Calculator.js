@@ -20,7 +20,7 @@ class Calculator extends Component {
   };
   operation = (event) => {
     let last = this.problem.length - 1;
-    if (this.problem[last] === "+" ||this.problem[last] === "-" ||this.problem[last] === "x" ||this.problem[last] === "/" ) {
+    if (this.problem[last] === "+" ||this.problem[last] === "-" ||this.problem[last] === "*" ||this.problem[last] === "/" ) {
       return;
     } 
     else if(this.problem==="" && (event.target.textContent==="/" || event.target.textContent==="*") ){
