@@ -3,11 +3,15 @@
     height: 500px;
     display: flex;
 	align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: column;
     background-color: aquamarine;
 }
+p{
+    margin: 1px;
+}
 #change{
-	height: 450px;
+	height: 400px;
     width: 95%;
 }
 .red{

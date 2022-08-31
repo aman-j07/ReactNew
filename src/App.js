@@ -1,9 +1,9 @@
 import "./App.css";
-import ChangeBackground from "./components/ChangeBackground";
+import Parent from "./components/Parent";
 function App() {
   return (
     <div className="App">
-      <ChangeBackground num="2"/>
+      <Parent/>
     </div>
   );
 }
