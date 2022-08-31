@@ -1,9 +1,9 @@
 import "./App.css";
-import SearchSuggestion from "./components/SearchSuggestion";
+import ChangeBackground from "./components/ChangeBackground";
 function App() {
   return (
-    <div className="App">    
-       <SearchSuggestion/>
+    <div className="App">
+      <ChangeBackground num="2"/>
     </div>
   );
 }

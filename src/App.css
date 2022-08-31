@@ -1,3 +1,18 @@
 .App{
-	margin: 2% 45%;
+	margin: 2%;
+    height: 500px;
+    display: flex;
+	align-items: center;
+    justify-content: center;
+    background-color: aquamarine;
+}
+#change{
+	height: 450px;
+    width: 95%;
+}
+.red{
+	background-color: red;
+}
+.blue{
+	background-color: blue;
 }
