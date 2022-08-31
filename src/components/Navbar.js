@@ -4,7 +4,7 @@ function Navbar() {
   return (
     <div id='divNavbar'>
         <i id="menuIcon" className="fa-solid fa-bars"></i>
-        <img alt="logo" src="https://www.instacart.com/image-server/120x24/www.instacart.com/assets/beetstrap/brand/2022/instacart-logo-color@3x-6b71df83cfba8c6827f59bff009df3be6e96d484ebdc5da7e6122e9555eae9b6.png"></img>
+        <img alt="logo" src="https://www.instacart.com/assets/beetstrap/brand/2022/instacart-logo-color-6678cb82d531f8910d5ba270a11a7e9b56fc261371bda42ea7a5abeff3492e1c.svg"></img>
         <button id="btnLogin">Log in</button>
         <button id="btnSignup">Sign Up</button>
     </div>

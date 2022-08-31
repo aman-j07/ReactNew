@@ -1,0 +1,63 @@
+#storesHead{
+    text-align: center;
+    font-size: 30px;
+    margin: 40px 0;
+}
+.aGreen{
+  color: green;
+  text-decoration: none;
+}
+.aGreen:hover{
+    cursor: pointer;
+    text-decoration: underline;
+  }
+#stores{
+    display: grid;    
+    grid-template-columns: repeat(auto-fill,minmax(344px,1fr));
+    gap: 24px;
+    justify-content: space-around;
+    height: 504px;
+    width: 80%;
+    margin: auto;
+}
+.store{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: grab;
+}
+.store>img{
+    height: 58px;
+    width: 58px;
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+}
+.storeDetails{
+    margin: 4%;
+    color: #343538;
+}
+#paraStoreName{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 5px 0;
+}
+#paraDelivery{
+    font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+#divShowAll{
+    margin: 3% 47%;
+    font-size: 18px;
+    font-weight: 600;
+}
+#divQR{
+    background-color: #B1E5D5;
+    display: flex;
+    width: 90%;
+    height: 100px;
+    margin: auto;
+}
