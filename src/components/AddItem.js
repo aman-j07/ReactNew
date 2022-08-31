@@ -15,13 +15,13 @@ class AddItem extends Component {
     this.btnAddRef = React.createRef();
   }
   changeHandlerTask = () => {
-    if (this.btnAddRef.current.innerHTML === "Add") {
+    if (this.btnAddRef.current.innerHTML === "Add" && this.inputRef.current.value!=="") {
       this.setState({
         newTask: this.inputRef.current.value,
       });
       this.arrTodo.push(this.inputRef.current.value);
       this.inputRef.current.value = "";
-    } else if (this.btnAddRef.current.innerHTML === "Update") {
+    } else if (this.btnAddRef.current.innerHTML === "Update"  && this.inputRef.current.value!=="") {
       if (this.idEdit === "incomplete-tasks") {
         this.arrTodo[this.indexEdit] = this.inputRef.current.value;
       } else if (this.idEdit === "completed-tasks") {
