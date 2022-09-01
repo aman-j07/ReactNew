@@ -5,3 +5,85 @@ body{
 .App{
     width: 100%;
 }
+#divContainer{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+    margin: 2% auto;
+    height: 300px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #dfdfdf;
+    border-radius: 5px;
+}
+#divHead{
+    font-size: 20px;
+    background-color: #6a62e5;
+    width: 100%;
+    padding: 3% 0;
+    color: white;
+    border-radius: 5px 5px 0px 0px;
+    text-align: center;
+}
+#divInputs{
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#divInputs input{
+    width: 25%;
+}
+#divInputs select{
+    width: 74%;
+    height: 30px;
+}
+#divInputs div{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#btnCalculate{
+    padding: 5px 10px;
+    border: 0;
+    width: 74%;
+    background-color: #6a62e5;
+    color: white;
+    border-radius: 3px;
+    font-size: 15px;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+}
+#paraUnselected{
+    margin: 0;
+    color: red;
+}
+#divResult{
+    padding: 0px 0 25px 0;
+    height: 20%;
+}
+#divResult>*{
+    margin: 10px;
+    text-align: center;
+}
+#blue{
+color: #3c88a5;
+}
+#green{
+color: green;
+}
+#yellow{
+     color: yellow;
+}
+#red{
+    color: red;
+}
+.paraStatus{
+    font-size: 20px;
+    font-weight: 600;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
