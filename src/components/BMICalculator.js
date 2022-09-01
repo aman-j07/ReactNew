@@ -17,10 +17,12 @@ class BMICalculator extends Component {
   }
 
   clickHandlerCalulate = () => {
-    this.unselected=false;
+    this.unselected = false;
     this.setState({
-        unselected:""
-    })
+      BMI: "",
+      weightStatus: "",
+      unselected: "",
+    });
     let height = this.refHeight.current.value;
     let weight = this.refWeight.current.value;
     let BMI = 0;
@@ -51,11 +53,10 @@ class BMICalculator extends Component {
         BMI: "Your BMI = " + BMI,
         weightStatus: weightStatus,
       });
-    }
-    else{
-        this.setState({
-            unselected:"Please select units first!"
-        })
+    } else {
+      this.setState({
+        unselected: "Please select units first!",
+      });
     }
   };
   changeHandlerUnit = (event) => {
