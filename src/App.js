@@ -1,9 +1,9 @@
 import './App.css';
-import BMICalculator from './components/BMICalculator';
+import ElectricBill from './components/ElectricBill';
 function App() {
   return (
     <div className="App">
-      <BMICalculator/>
+      <ElectricBill/>
     </div>
   );
 }

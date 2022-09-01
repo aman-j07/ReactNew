@@ -10,8 +10,7 @@ body{
     width: 20%;
     flex-direction: column;
     margin: 2% auto;
-    height: 300px;
-    justify-content: space-between;
+    height: 200px;
     align-items: center;
     background-color: #dfdfdf;
     border-radius: 5px;
@@ -31,19 +30,19 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    margin: 5% 0;
 }
 #divInputs input{
     width: 25%;
-}
-#divInputs select{
-    width: 74%;
-    height: 30px;
+    height: 100%;
+    font-size: 15px;
+    padding: 0 2px;
 }
 #divInputs div{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
-
 #btnCalculate{
     padding: 5px 10px;
     border: 0;
@@ -54,10 +53,7 @@ body{
     font-size: 15px;
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 }
-#paraUnselected{
-    margin: 0;
-    color: red;
-}
+
 #divResult{
     padding: 0px 0 25px 0;
     height: 20%;
@@ -65,22 +61,8 @@ body{
 #divResult>*{
     margin: 10px;
     text-align: center;
-}
-#blue{
-color: #3c88a5;
-}
-#green{
-color: green;
-}
-#yellow{
-     color: yellow;
-}
-#red{
-    color: red;
-}
-.paraStatus{
     font-size: 20px;
-    font-weight: 600;
+    color: #624f83;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
