@@ -1,11 +1,7 @@
 import React, { Component, createRef } from "react";
 
 class BMICalculator extends Component {
-  refHeight = createRef();
-  refWeight = createRef();
-  units = "";
-  class = "";
-  unselected = false;
+  refHeight = createRef();refWeight = createRef();units = "";class = "";unselected = false;unitHeight;unitWeight;
   constructor(props) {
     super(props);
 
@@ -22,6 +18,8 @@ class BMICalculator extends Component {
       BMI: "",
       weightStatus: "",
       unselected: "",
+      unitHeight:this.unitHeight,
+      unitWeight:this.unitWeight,
     });
     let height = this.refHeight.current.value;
     let weight = this.refWeight.current.value;
@@ -61,6 +59,20 @@ class BMICalculator extends Component {
   };
   changeHandlerUnit = (event) => {
     this.units = event.target.value;
+    if(this.units!=="---Select Units---"){
+    this.unitHeight=event.target.value.slice(3)
+    this.unitWeight=event.target.value.slice(0,2)
+    this.setState({
+      unitHeight:" in "+this.unitHeight,
+      unitWeight:" in "+this.unitWeight,
+    })
+  }
+  else{
+    this.setState({
+      unitHeight:"",
+      unitWeight:"",
+    })
+  }
   };
   render() {
     return (
@@ -70,15 +82,15 @@ class BMICalculator extends Component {
           <select onChange={this.changeHandlerUnit}>
             <option>---Select Units---</option>
             <option>kg-metres</option>
-            <option>lbs-inches</option>
+            <option>lb-inches</option>
           </select>
           <div>
             <label>Enter Height</label>
-            <input ref={this.refHeight} id="inpHeight" />
+            <div><input ref={this.refHeight} id="inpHeight" />{this.state.unitHeight}</div>
           </div>
           <div>
             <label>Enter Weight</label>
-            <input ref={this.refWeight} id="inpWeight" />
+            <div><input ref={this.refWeight} id="inpWeight" />{this.state.unitWeight}</div>
           </div>
           <button id="btnCalculate" onClick={this.clickHandlerCalulate}>
             Calculate
