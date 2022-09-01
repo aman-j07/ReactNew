@@ -7,62 +7,122 @@ body{
 }
 #divContainer{
     display: flex;
-    width: 20%;
     flex-direction: column;
+    width: 25%;
     margin: 2% auto;
-    height: 200px;
-    align-items: center;
-    background-color: #dfdfdf;
-    border-radius: 5px;
+    border: 1px solid black;
+    padding:0 0 1% 0;
 }
 #divHead{
     font-size: 20px;
-    background-color: #6a62e5;
-    width: 100%;
-    padding: 3% 0;
-    color: white;
-    border-radius: 5px 5px 0px 0px;
     text-align: center;
+    background-color: #198cc3;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+    display: flex;
+    box-shadow: rgb(60 64 67 / 30%) 0px 1px 2px 0px, rgb(60 64 67 / 15%) 0px 2px 6px 2px;
+    justify-content: space-between;
+    align-items: center;
+}
+#btnRefresh{
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 20px;
+}
+#divBody{
+    font-size: 14px;
+}
+#divBody>*{
+    margin: 0;
 }
 #divInputs{
-    height: 45%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5% 0;
+    justify-content: space-evenly;
+    padding: 20px 0 10px 0;
 }
-#divInputs input{
-    width: 25%;
-    height: 100%;
-    font-size: 15px;
-    padding: 0 2px;
-}
-#divInputs div{
+#divInputs>div{
     display: flex;
+    height: 20%;
+    margin: 3% 0;
     justify-content: space-evenly;
     align-items: center;
 }
-#btnCalculate{
-    padding: 5px 10px;
+#divInputs>div>p{
+    margin: 0;
+    width: 85px;
+}
+.inpNumber{
+    width:80px;
     border: 0;
-    width: 74%;
-    background-color: #6a62e5;
+    border-bottom: 2px solid gray;
+}
+input:focus
+{
+    border: 0;
+    border-bottom: 2px solid #198cc3;
+    outline-offset: 0px;
+    outline: none;
+}
+#divInpPeriod{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.inpPeriod{
+    width:32px;
+    border: 0;
+    border-bottom: 2px solid gray;
+}
+#divButtons{
+  display: flex;
+  justify-content: center;
+  margin: 5% 0;
+}
+#divButtons>button{
+    background-color: #198cc3;
     color: white;
-    border-radius: 3px;
-    font-size: 15px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    border: 0;
+    margin: 0 2px;
+    font-size: 14px;
+    border-radius: 2px;
+    width: 90px;
+    padding: 5px;
+    font-family: system-ui;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-#divResult{
-    padding: 0px 0 25px 0;
-    height: 20%;
+.inpRadio{
+    margin: 2px;
+    height: 25px;
+    width: 25px;
 }
-#divResult>*{
-    margin: 10px;
+#paraEmpty{
     text-align: center;
-    font-size: 20px;
-    color: #624f83;
+    color: red;
+    margin: 15px 0;
+}
+#divResult{
+ height: 120px;
+ visibility: visible;
+}
+#divResultHidden{
+    height: 0px;
+    visibility: hidden;
+}
+#tabResult{
+    height: 120px;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+#tabResult,tr,td{
+    border-collapse: collapse;
+    border: 1px solid #198cc3;
+}
+td{
+   width: 50%; 
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

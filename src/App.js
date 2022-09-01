@@ -1,9 +1,9 @@
 import './App.css';
-import ElectricBill from './components/ElectricBill';
+import EMIcalculator from './components/EMIcalculator';
 function App() {
   return (
     <div className="App">
-      <ElectricBill/>
+     <EMIcalculator/>
     </div>
   );
 }
