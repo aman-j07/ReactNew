@@ -27,7 +27,7 @@ class BMICalculator extends Component {
     let weightStatus = "";
     if (this.units === "kg-metres") {
       BMI = (weight / (height * height)).toFixed(2);
-    } else if (this.units === "lbs-inches") {
+    } else if (this.units === "lb-inches") {
       BMI = ((weight / (height * height)) * 703).toFixed(2);
     } else {
       this.unselected = true;
