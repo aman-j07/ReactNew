@@ -48,6 +48,7 @@ hr{
     background: transparent;
     font-weight: 600;
     font-size: 17px;
+    cursor: grab;
 }
 #paraEmpty{
     color: red;
