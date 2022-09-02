@@ -20,12 +20,10 @@ class List extends Component {
     } else {
       this.refItem.current.value=""
       this.items.push(item);
-      console.log(this.items);
       this.setState({
         items: this.items,
         empty: "",
       });
-      console.log(this.state.items);
     }
   };
   clickHandlerDelete = event => {
