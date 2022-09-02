@@ -40,7 +40,7 @@ class List extends Component {
     return (
       <>
         <div id="items">
-          <div>
+          <div id="divAdd"><div>
             <input
               id="item"
               type="text"
@@ -49,13 +49,13 @@ class List extends Component {
             />
             <button id="btnAdd" onClick={this.clickHandlerAdd}>
               Add
-            </button>
+            </button></div>
           </div>
           {this.state.items.map((item,i) => {
             return (
               <>
                 <hr />
-                <div>
+                <div className="items">
                   <button className="cross" id={i} onClick={this.clickHandlerDelete}>
                     x
                   </button>

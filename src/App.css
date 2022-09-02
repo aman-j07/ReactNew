@@ -1,19 +1,32 @@
 .App{
-    width: 200px;
+    width: 250px;
     margin: 2% auto;
 }
 #items{
     border: 1px solid gray;
 }
-#items div{
-    height: 30px;
+.items{
     display: flex;
     align-items: center;
+    height: 30px;
+    overflow: hidden;
 }
+#divAdd{
+    height: 35px;
+    padding: 3% 6%;
+}
+#divAdd>div{
+    display: flex;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+
 input{
     width: 70%;
     height: 90%;
     border: 0;
+    box-shadow: rgb(50 50 93 / 25%) 0px 30px 60px -115px inset, rgb(0 0 0 / 30%) 0px 18px 36px -23px inset;
 }
 input:focus {
     outline: none;
@@ -21,7 +34,10 @@ input:focus {
 #btnAdd{
     width: 30%;
     height: 100%;
+    background-color: white;
     border: 0;
+    font-family: system-ui;
+    font-size: 16px;
     border-left: 1px solid gray;
 }
 hr{
