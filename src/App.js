@@ -1,9 +1,10 @@
 import './App.css';
-import EMIcalculator from './components/EMIcalculator';
+import List from './components/List';
+
 function App() {
   return (
     <div className="App">
-     <EMIcalculator/>
+      <List/>
     </div>
   );
 }
