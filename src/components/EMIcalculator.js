@@ -41,7 +41,7 @@ class EMIcalculator extends Component {
         totalAmt: totalAmt,
     })
   };
-  clickHandlerReset = () => {;this.refAmt.current.value="";this.refInterest.current.value="";this.refYears.current.value="";this.refMonths.current.value=""
+  clickHandlerReset = () => {this.refAmt.current.value="";this.refInterest.current.value="";this.refYears.current.value="";this.refMonths.current.value=""
     this.setState({
         emi: '',
         totalInt: '',
