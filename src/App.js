@@ -2,16 +2,7 @@ import { createRef } from "react";
 import { useState } from "react";
 import "./App.css";
 let arrErrors={name:"",email:"",password:"",address:"",phone:"",image:"",gender:"",DOB:"",imageClick:0};
-let gender="";
-let refName    =createRef();
-let refEmail   =createRef();
-let refPassword=createRef();
-let refAddress =createRef();
-let refPhone   =createRef();
-let refGender  =createRef();
-let refHobbies=createRef();
-let refImage=createRef();
-let refDOB=createRef();
+let gender="";let refName=createRef();let refEmail=createRef();let refPassword=createRef();let refAddress=createRef();let refPhone=createRef();let refGender=createRef();let refHobbies=createRef();let refImage=createRef();let refDOB=createRef();
 function App() {
   const [header, setHeader] = useState(["header","Enter your details----"]);
   const [errors,setErrors]=useState({});
@@ -69,7 +60,6 @@ function App() {
       }
     }
     if(id==="inpDOB"){
-      console.log(value)
       if(value===""){
         arrErrors.DOB="Please select a date of birth"
       }
@@ -77,7 +67,6 @@ function App() {
         arrErrors.DOB="";
       }
     }
-    console.log(arrErrors)
     setErrors({...arrErrors})
   };
 
@@ -91,7 +80,6 @@ function App() {
   }
 
   const clickHandlerRegister=()=>{
-    console.log(arrErrors)
     if(new Set(Object.values(arrErrors)).size==1 && gender!=""){
       setHeader(["headerBlue","Your details are stored"])
     }
@@ -171,10 +159,8 @@ function App() {
       <div>
         <div className="labels">Select your Gender</div>
         <div className="inputs" onChange={changeHandlerGender} ref={refGender}>
-          <input type="radio" name="gender"  value="Male" />
-          Male
-          <input type="radio" name="gender"  value="Female" />
-          Female
+          <input type="radio" name="gender"  value="Male" />Male
+          <input type="radio" name="gender"  value="Female" />Female
         </div>
       </div>
       <p className="paraError">{errors.gender}</p>
