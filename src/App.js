@@ -1,10 +1,9 @@
 import "./App.css";
-import AddItem from "./components/AddItem";
+import SignLog from "./components/SignLog";
 function App() {
   return (
     <div className="container">
-       <AddItem />
-     
+      <SignLog/>
     </div>
   );
 }
