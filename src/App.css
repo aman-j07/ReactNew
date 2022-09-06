@@ -1,43 +1,57 @@
-#task1{
-    height: 120px;
+*{
+    margin: 0;
+    font-family: auto;
 }
-#task2{
+.container{
+    width: 31%;
+    margin: 2% auto;
     display: flex;
     flex-direction: column;
-    width: 15%;
-    height: 150px;
+    justify-content: space-evenly;
+    border: 1px solid gray;
+    padding: 3px;
+}
+.container>div{
+    display: flex;
+    justify-content: space-between;
+    margin: 2px 0 0 0;
+}
+.labels,.inputs{
+    width: 204px;
+    border: 1px solid gray;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+}
+#header,#footer{
+    border: 1px solid gray;
+    padding: 1px;
+}
+#headerBlue{
+    color: blue;
+}
+.paraError{
+    color: red;
+    font-size: 12px;
+    text-align: right;
+}
+#inpHobbies{
+    display: flex;
     justify-content: space-between;
 }
-#task3{
-    height: 150px;
+#btnRegister{
+    margin-left: 30%;
+    width: 85px;
 }
-#task3 select{
-    width: 5%;
+#btnReset{
+    width: 85px;
+    margin-right: 26%;
 }
-#task4{
-    height: 200px;
-    width: 80%;
-    padding: 5% 10%;
+input:focus,textarea:focus,select:focus{
+    outline: none;
 }
-#task4 button{
-    background: transparent;
-    border: 1px solid;
-    border-radius: 2px;
-}
-#task4Dark{
-    height: 200px;
-    width: 80%;
-    padding: 5% 10%;
-    color: white;
-    background-color:black ;
-}
-#task4Dark button{
-    background: transparent;
-    color: white;
-    border-radius: 2px;
-    border: 1px solid;
-
-}
-#task5{
-    height: 210px;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
