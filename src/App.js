@@ -84,6 +84,10 @@ function App() {
 
   const changeHandlerGender=(event)=>{
      gender=event.target.value;
+     if(gender!=""){
+      arrErrors.gender=""
+     }
+     setErrors({...arrErrors})
   }
 
   const clickHandlerRegister=()=>{
