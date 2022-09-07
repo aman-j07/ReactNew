@@ -68,11 +68,16 @@
 #footer{
     display: flex;
     margin: auto;
-    width: 31%;
+    width: 100%;
     justify-content: space-between;
+    flex-direction: row !important;
+}
+#footer>div{
+    margin: 1% 15%;
 }
 #footer button{
     width: 85px;
+    height: 30px;
 }
 #empty{
     text-align: center;

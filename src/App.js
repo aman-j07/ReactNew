@@ -167,7 +167,6 @@ function App() {
   const clickHandlerReset=()=>{
     arrErrors={stname:"",email:"",address:"",phone:"",gender:"",DOB:"",sibling:"",Fname:"",fQualification:"",fPhone:"",fEmail:"",fOccupation:"",Mname:"",mQualification:"",mPhone:"",mEmail:"",mOccupation:""};
     setErrors({...arrErrors})
-    document.getElementsByClassName("container").reset()
 }
   return (
     <div>
@@ -195,9 +194,9 @@ function App() {
       </div>
       <div><label>Mother's Occupation</label><input className="inp" onChange={changeHandler} type="text" id="mOccupation" /><p className="errors">{arrErrors.mOccupation}</p></div>
       <div><label>Address</label><input className="inp" onChange={changeHandler} type="text" placeholder="Street Address" id="inpAddress"/><p className="errors">{arrErrors.address}</p></div>
-      </form>
       <div id="footer"><div><button id="btnRegister" onClick={clickHandlerRegister}>Register Me</button></div>
-      <div><button id="btnReset" onClick={clickHandlerReset}>Reset</button></div></div>
+      <div><button id="btnReset" type="reset" onClick={clickHandlerReset}>Reset</button></div></div>
+      </form>
       <p id="empty">{filled}</p>
     </div>
   );
