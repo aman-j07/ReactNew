@@ -2,7 +2,8 @@ import { createRef } from "react";
 import { useState } from "react";
 import "./App.css";
 let arrErrors={name:"",email:"",password:"",address:"",phone:"",image:"",gender:"",DOB:"",imageClick:0};
-let gender="";let refName=createRef();let refEmail=createRef();let refPassword=createRef();let refAddress=createRef();let refPhone=createRef();let refGender=createRef();let refHobbies=createRef();let refImage=createRef();let refDOB=createRef();
+let gender="";let values={}
+let refName=createRef();let refEmail=createRef();let refPassword=createRef();let refAddress=createRef();let refPhone=createRef();let refGender=createRef();let refHobbies=createRef();let refImage=createRef();let refDOB=createRef();
 function App() {
   const [header, setHeader] = useState(["header","Enter your details----"]);
   const [errors,setErrors]=useState({});
@@ -119,78 +120,31 @@ function App() {
     refHobbies.current.innerHTML="<input onBlur={changeHandler} type='checkbox' value='Cricket' />Cricket<input onBlur={changeHandler} type='checkbox' value='Singing' />Singing<input onBlur={changeHandler} type='checkbox' value='Dancing' />Dancing"
   }
   return (
-    <div className="container">
-      <div id={header[0]}>{header[1]}</div>
-      <div>
-        <div className="labels">Enter your Name</div>
-        <div className="inputs">
-          <input onBlur={changeHandler} ref={refName} type="text" id="inpName" />
-        </div>
+    <div>
+      <form className="container">
+      <div id="header">Student Registration Form</div>
+      <div><label>Name of the Applicant</label>
+      <div className="fname"><input type="text" placeholder="First"/><input type="text" placeholder="Last"/></div></div>
+      <div><label>Date of Birth</label><input placeholder="MM/DD/YYYY" type="date" /></div>
+      <div id="gender"><label>Gender</label><div><input name="gender" type="radio"/><label>Male</label></div><div><input type="radio" name="gender" /><label>Female</label></div></div>
+      <div><label>Details of Siblings</label><textarea type="text" /></div>
+      <label>Parent's Information</label>
+      <div><label>Father's Name</label>
+      <div className="fname"><input type="text" placeholder="First"/><input type="text" placeholder="Last"/></div></div>
+      <div><label>Father's Qualification</label><input type="text" /></div>
+      <div className="phem">
+        <div ><label>Phone</label><input type="number" placeholder="### ### ####"/></div><div><label>Email</label><input type="email" /></div>
       </div>
-      <p className="paraError">{errors.name}</p>
-      <div>
-        <div className="labels">Enter your Email</div>
-        <div className="inputs">
-          <input onBlur={changeHandler} type="email" ref={refEmail} id="inpEmail" />
-        </div>
+      <div><label>Father's Occupation</label><input type="text" /></div>
+      <div><label>Mother's Name</label>
+      <div className="fname"><input type="text" placeholder="First"/><input type="text" placeholder="Last"/></div></div>
+      <div><label>Mother's Qualification</label><input type="text" /></div>
+      <div className="phem">
+        <div ><label>Phone</label><input type="number" placeholder="### ### ####"/></div><div><label>Email</label><input type="email" /></div>
       </div>
-      <p className="paraError">{errors.email}</p>
-      <div>
-        <div className="labels">Enter your Password</div>
-        <div className="inputs">
-          <input onBlur={changeHandler}  type="password" ref={refPassword} id="inpPassword" />
-        </div>
-      </div>
-      <p className="paraError">{errors.password}</p>
-      <div>
-        <div className="labels">Enter your Address</div>
-        <div className="inputs">
-          <textarea  onBlur={changeHandler} ref={refAddress} id="inpAddress" />
-        </div>
-      </div>
-      <p className="paraError">{errors.address}</p>
-      <div>
-        <div className="labels">Enter your Mobile</div>
-        <div className="inputs">
-          <input onBlur={changeHandler} ref={refPhone} type="number" id="inpPhone" />
-        </div>
-      </div>
-      <p className="paraError">{errors.phone}</p>
-      <div>
-        <div className="labels">Select your Gender</div>
-        <div className="inputs" onChange={changeHandlerGender} ref={refGender}>
-          <input type="radio" name="gender"  value="Male" />Male
-          <input type="radio" name="gender"  value="Female" />Female
-        </div>
-      </div>
-      <p className="paraError">{errors.gender}</p>
-      <div>
-        <div className="labels">Enter your Hobbies</div>
-        <div className="inputs" ref={refHobbies} id="inpHobbies">
-          <input onBlur={changeHandler} type="checkbox" value="Cricket" />Cricket
-          <input onBlur={changeHandler} type="checkbox" value="Singing" />Singing
-          <input onBlur={changeHandler} type="checkbox" value="Dancing" />Dancing
-        </div>
-      </div>
-      <p className="paraError"></p>
-      <div>
-        <div className="labels">Choose your Profile Pic</div>
-        <div className="inputs">
-          <input id="inpImage" onBlur={changeHandler} ref={refImage} type="file" />
-        </div>
-      </div>
-      <p className="paraError">{errors.image}</p>
-      <div>
-        <div className="labels">Select your DOB</div>
-        <div className="inputs">
-         <input id="inpDOB" type="date" ref={refDOB} onChange={changeHandler}/>
-        </div>
-      </div>
-      <p className="paraError">{errors.DOB}</p>
-      <div id="footer">
-        <button id="btnRegister" onClick={clickHandlerRegister}>Register Me</button>
-        <button id="btnReset" onClick={clickHandlerReset}>Reset</button>
-      </div>
+      <div><label>Mother's Occupation</label><input type="text" /></div>
+      <div><label>Address</label><input type="text" placeholder="Street Address"/></div>
+      </form>
     </div>
   );
 }

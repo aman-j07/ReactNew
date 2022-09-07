@@ -9,43 +9,53 @@
     flex-direction: column;
     justify-content: space-evenly;
     border: 1px solid gray;
-    padding: 3px;
+    padding: 15px;
+}
+#header{
+    font-size: 20px;
+}
+.container>div>label{
+    font-size: 14px;
+}
+.container>label{
+    font-size: 18px;
 }
 .container>div{
     display: flex;
+    flex-direction: column;
+    margin: 7px 0;
+}
+.container input{
+    height: 25px;
+}
+.container textarea{
+    height: 60px;
+}
+#gender{
+    height: 70px;
     justify-content: space-between;
-    margin: 2px 0 0 0;
 }
-.labels,.inputs{
-    width: 204px;
-    border: 1px solid gray;
-    padding: 1px;
-    display: flex;
-    align-items: center;
+#gender>div>label{
+    font-size: 14px;
+    color: #383333;
+    margin: 3px 0 0 8px;
 }
-#header,#footer{
-    border: 1px solid gray;
-    padding: 1px;
-}
-#headerBlue{
-    color: blue;
-}
-.paraError{
-    color: red;
-    font-size: 12px;
-    text-align: right;
-}
-#inpHobbies{
+.fname{
     display: flex;
     justify-content: space-between;
 }
-#btnRegister{
-    margin-left: 30%;
-    width: 85px;
+.fname>input{
+    width: 47%;
 }
-#btnReset{
-    width: 85px;
-    margin-right: 26%;
+.phem{
+    flex-direction: row !important;   
+    justify-content: space-between;
+}
+.phem>div{
+    width: 49%;
+}
+.phem>div>input{
+    width: 94%;
 }
 input:focus,textarea:focus,select:focus{
     outline: none;
