@@ -60,8 +60,12 @@ function App() {
       }
     }
     if(id==="inpDOB"){
-      if(value===""){
+      let year=value.slice(0,4)
+      if(value===""){ 
         arrErrors.DOB="Please select a date of birth"
+      }
+      else if(year>2002){
+        arrErrors.DOB="Date of birth should be of before 2002"
       }
       else{
         arrErrors.DOB="";
