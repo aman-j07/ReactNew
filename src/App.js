@@ -114,12 +114,10 @@ function App() {
   const clickHandlerReset=()=>{
     arrErrors={name:"",email:"",password:"",address:"",phone:"",image:"",gender:"",DOB:"",imageClick:0};
     setErrors({...arrErrors})
-    refName.current.value=refName.current.value=refEmail.current.value=refPassword.current.value=refAddress.current.value=refPhone.current.value=refDOB.current.value=refImage.current.value="";
-    refGender.current.innerHTML="<input type='radio' name='gender'  value='Male' />Male<input type='radio' name='gender'  value='Female' />Female"
-    refHobbies.current.innerHTML="<input onBlur={changeHandler} type='checkbox' value='Cricket' />Cricket<input onBlur={changeHandler} type='checkbox' value='Singing' />Singing<input onBlur={changeHandler} type='checkbox' value='Dancing' />Dancing"
-  }
+    document.getElementsByClassName("container").reset();
+}
   return (
-    <div className="container">
+      <form className="container">
       <div id={header[0]}>{header[1]}</div>
       <div>
         <div className="labels">Enter your Name</div>
@@ -191,7 +189,7 @@ function App() {
         <button id="btnRegister" onClick={clickHandlerRegister}>Register Me</button>
         <button id="btnReset" onClick={clickHandlerReset}>Reset</button>
       </div>
-    </div>
+      </form>
   );
 }
 
