@@ -199,6 +199,9 @@ input[type="number"]{
     display: flex;
     justify-content: space-between;
 }
+.paraError{
+  color: red;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;

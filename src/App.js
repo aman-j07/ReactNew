@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 const arrCategories=[[],[],[],[]]
-const arrIncomes=[];
+const arrIncomes=[];const error={income:"",expense:""}
 let idEdit=0;let indexEdit=0;let indexEditIncome=0;
 let numbers={totIncome:0,expense:0,balance:0,totGrocery:0,totVeggies:0,totTravel:0,totMisc:0}
 function App() {
@@ -10,25 +10,31 @@ function App() {
   const[Incomes,setIncomes]=useState(arrIncomes)
   const[btn,setBtn]=useState("Add")
   const[btnIncome,setBtnIncome]=useState("Add")
+  const[Error,setError]=useState(error)
   
   const addIncome=()=>{ 
     let obj={text:"",amt:0};
     obj.text=document.getElementById("IncomeText").value
     obj.amt=document.getElementById("IncomeAmount").value
-    obj.amt=parseFloat(obj.amt);
-    if(obj.amt!=""||obj.text!=""){
+    console.log(obj)
+    if(obj.amt!=""&&obj.text!=""&&obj.amt!=0){
+      error.income="";
       if(btnIncome=="Add"){
           arrIncomes.push(obj)
         }
       else{
           arrIncomes[indexEditIncome]=obj   
+          setBtnIncome("Add")
        }
       calNumbers();
       setIncomes([...arrIncomes])
+      document.getElementById("IncomeText").value="";
+      document.getElementById("IncomeAmount").value="";
     }
-    document.getElementById("IncomeText").value="";
-    document.getElementById("IncomeAmount").value="";
-    setBtnIncome("Add")
+    else{
+      error.income="Text and amount cannot be empty or less than 0"
+    }
+    setError({...error})
   }
 
   const addExpense=()=>{
@@ -36,14 +42,10 @@ function App() {
     obj.text=document.getElementById("expenseText").value
     obj.amt=document.getElementById("expenseAmount").value
     let category=document.getElementById("selCategory").value
-    document.getElementById("expenseAmount").value=""
-    document.getElementById("expenseText").value=""
-    document.getElementById("selCategory").selectedIndex=0
-    document.getElementById("selCategory").disable=true;
-    if(category>0){
+    if(category>0 &&obj.text!=""&&obj.amt!=""&&obj.amt!=0){
+      error.expense="";
       if(btn==="Add"){
         arrCategories[category-1].push(obj)
-        console.log(arrCategories)
     }
     else{
       if(idEdit==category){
@@ -60,10 +62,17 @@ function App() {
       }
       setBtn("Add")
     } 
-      calNumbers();
-      setCategories([...arrCategories])
-      setNumbers({...numbers})
+    document.getElementById("expenseAmount").value=""
+    document.getElementById("expenseText").value=""
+    document.getElementById("selCategory").selectedIndex=0
+    calNumbers();
+    setCategories([...arrCategories])
+    setNumbers({...numbers})
     }
+    else{
+      error.expense="Text and amount cannot be empty or less than 0 and also select a category."
+    }
+    setError({...error})
   }
 
   const clickDeleteExpense=(event)=>{
@@ -145,11 +154,12 @@ function App() {
           <h3>Add New Income</h3>
           <div id="incomeInp">
             <input type="text" id="IncomeText" placeholder="Enter text..." />
-            <input type="number" id="IncomeAmount" placeholder="Enter amount..." />
+            <input type="number" id="IncomeAmount" placeholder="Enter amount" />
           </div>
           <button onClick={addIncome} className="btn">
           {btnIncome} Income
         </button>
+        <p className="paraError">{Error.income}</p>
         </div>
         <div className="form-control">
           <h3>Add New Expense</h3>
@@ -161,6 +171,7 @@ function App() {
           <button onClick={addExpense} className="btn">
           {btn} Expense
         </button>
+        <p className="paraError">{Error.expense}</p>
         </div>
         <div id="Income">
             <div className="header"><h3>Incomes</h3><p>Total- {numbers.totIncome}/-</p></div>
