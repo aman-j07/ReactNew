@@ -44,8 +44,6 @@ function App() {
       if(btn==="Add"){
         arrCategories[category-1].push(obj)
         console.log(arrCategories)
-        // setCategories([...arrCategories])
-        // calNumbers();
     }
     else{
       if(idEdit==category){
