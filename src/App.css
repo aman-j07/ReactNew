@@ -203,6 +203,9 @@ font-size: 30px;
   border-radius: 10px;
   cursor: grab;
 }
+.item:hover{
+  transform: scale(1.05);
+}
 .item>img{
   width: 100%;
   height: 70%;
