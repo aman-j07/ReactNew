@@ -3,13 +3,12 @@ import RestaurantsList from './RestaurantsList';
 
 let matched=[];
 const Restaurants=()=>{
-    const [Matched,setMatched]=useState(matched)
     const restaurants= [
             {
                 "id": 1,
                 "name": "Mission Chinese Food",
                 "neighborhood": "Manhattan",
-                "photograph": "1.jpg",
+                "photograph": "https://d1ralsognjng37.cloudfront.net/8ed2397e-53e9-4d10-a43f-108524dcd680.jpeg",
                 "address": "171 E Broadway, New York, NY 10002",
                 "latlng": {"lat": 40.713829,"lng": -73.989667},
                 "cuisine_type": "Asian",
@@ -39,7 +38,7 @@ const Restaurants=()=>{
                 "id": 2,
                 "name": "Emily",
                 "neighborhood": "Brooklyn",
-                "photograph": "2.jpg",
+                "photograph": "https://media-cdn.tripadvisor.com/media/photo-s/18/45/a9/e7/emily-west-village.jpg",
                 "address": "919 Fulton St, Brooklyn, NY 11238",
                 "latlng": {
                     "lat": 40.683555,
@@ -80,7 +79,7 @@ const Restaurants=()=>{
                 "id": 3,
                 "name": "Kang Ho Dong Baekjeong",
                 "neighborhood": "Manhattan",
-                "photograph": "3.jpg",
+                "photograph": "https://koreatownlosangeles.com/wp-content/uploads/2021/09/kang-hodong-baekjeong-1024x683.jpg",
                 "address": "1 E 32nd St, New York, NY 10016",
                 "latlng": {
                     "lat": 40.747143,
@@ -121,7 +120,7 @@ const Restaurants=()=>{
                 "id": 4,
                 "name": "Katz's Delicatessen",
                 "neighborhood": "Manhattan",
-                "photograph": "4.jpg",
+                "photograph": "https://media-cdn.tripadvisor.com/media/photo-s/1c/fe/77/b7/katz-s-most-popular-menu.jpg",
                 "address": "205 E Houston St, New York, NY 10002",
                 "latlng": {
                     "lat": 40.722216,
@@ -162,7 +161,7 @@ const Restaurants=()=>{
                 "id": 5,
                 "name": "Roberta's Pizza",
                 "neighborhood": "Brooklyn",
-                "photograph": "5.jpg",
+                "photograph": "https://cdn.sanity.io/images/ssu78sm1/production/c3020eb3b9b6db1edc5e11e7f515e5ec9f8de961-2880x2008.jpg?rect=0,445,2880,1512&w=1200&h=630&q=75&auto=format",
                 "address": "261 Moore St, Brooklyn, NY 11206",
                 "latlng": {
                     "lat": 40.705089,
@@ -203,7 +202,7 @@ const Restaurants=()=>{
                 "id": 6,
                 "name": "Hometown BBQ",
                 "neighborhood": "Brooklyn",
-                "photograph": "6.jpg",
+                "photograph": "https://images.squarespace-cdn.com/content/v1/55bfb06ce4b0df65afe0dcd8/1464278788180-6N7T2M19165EOOWK6QRE/image-asset.jpeg?format=1000w",
                 "address": "454 Van Brunt St, Brooklyn, NY 11231",
                 "latlng": {
                     "lat": 40.674925,
@@ -244,7 +243,7 @@ const Restaurants=()=>{
                 "id": 7,
                 "name": "Superiority Burger",
                 "neighborhood": "Manhattan",
-                "photograph": "7.jpg",
+                "photograph": "https://9b16f79ca967fd0708d1-2713572fef44aa49ec323e813b06d2d9.ssl.cf2.rackcdn.com/1140x_a10-7_cTC/superiority-burger-3-1-1569443200.jpg",
                 "address": "430 E 9th St, New York, NY 10009",
                 "latlng": {
                     "lat": 40.727397,
@@ -285,7 +284,7 @@ const Restaurants=()=>{
                 "id": 8,
                 "name": "The Dutch",
                 "neighborhood": "Manhattan",
-                "photograph": "8.jpg",
+                "photograph": "https://img.cdn4dd.com/cdn-cgi/image/fit=cover,width=600,height=400,format=auto,quality=80/https://doordash-static.s3.amazonaws.com/media/store/header/c05d84a2-fca6-4bd3-bfa1-a731bcca657e.jpg",
                 "address": "131 Sullivan St, New York, NY 10012",
                 "latlng": {
                     "lat": 40.726584,
@@ -326,7 +325,7 @@ const Restaurants=()=>{
                 "id": 9,
                 "name": "Mu Ramen",
                 "neighborhood": "Queens",
-                "photograph": "9.jpg",
+                "photograph": "https://images.squarespace-cdn.com/content/v1/57dcaa0b3e00be77ca9a9c6f/1478230362492-5E2W8L1UD7GSC783WSRE/IMG_1556e.jpg?format=1000w",
                 "address": "1209 Jackson Ave, Queens, NY 11101",
                 "latlng": {
                     "lat": 40.743797,
@@ -367,7 +366,7 @@ const Restaurants=()=>{
                 "id": 10,
                 "name": "Casa Enrique",
                 "neighborhood": "Queens",
-                "photograph": "10.jpg",
+                "photograph": "https://static01.nyt.com/images/2019/01/30/dining/30rest2/merlin_149497674_73383fb1-61c9-4769-bb81-3f6c641fb2b9-jumbo.jpg",
                 "address": "5-48 49th Ave, Queens, NY 11101",
                 "latlng": {
                     "lat": 40.743394,
@@ -405,6 +404,8 @@ const Restaurants=()=>{
                 ]
             }
         ]
+
+        const [Matched,setMatched]=useState(restaurants)
     
     const changeHandlerSearch=(event)=>{
         matched=[];
@@ -426,7 +427,7 @@ const Restaurants=()=>{
         <a href="#search" id="aSearch" >Search</a>
         </div>
         <div id='search'>
-         <div id="divSearch"><input onChange={changeHandlerSearch} id="inpSearch" placeholder="Search for restaurant, cuisines or neighbourhood"></input><i id="searchIcon" class="fa-solid fa-magnifying-glass"></i></div>
+         <div id="divSearch"><input onChange={changeHandlerSearch} id="inpSearch" placeholder="Search for restaurant, cuisines or neighbourhood"></input><i id="searchIcon" className="fa-solid fa-magnifying-glass"></i></div>
         </div>
         <RestaurantsList matched={Matched} />
         </>
