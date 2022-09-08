@@ -1,204 +1,161 @@
 import { useState } from "react";
 import "./App.css";
-let arrErrors={stname:"",email:"",address:"",phone:"",gender:"",DOB:"",sibling:"",Fname:"",fQualification:"",fPhone:"",fEmail:"",fOccupation:"",Mname:"",mQualification:"",mPhone:"",mEmail:"",mOccupation:""};
-let gender="";
-let filled=""
+const arrCategories=[[],[],[],[]]
+let idEdit=0;let indexEdit=0;
+let numbers={income:0,expense:0,balance:0,totGrocery:0,totVeggies:0,totTravel:0,totMisc:0}
 function App() {
-  const [errors,setErrors]=useState({});
-  const [Filled,setfilled]=useState("");
-
-  const changeHandler = (event) => { 
-    console.log(document.getElementById("header").innerHTML)
-    let id = event.target.getAttribute("id");
-    let value = event.target.value;
-    let regexName=/^[a-zA-Z ]{2,20}$/;
-    let regexString=/^[a-zA-Z ]{2,}$/;
-    let regexPhone = /^\d{10}$/;
-    let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (id === "stFname") {
-      if (regexName.test(value) !== true) {
-          arrErrors.stname="Enter valid name";
-      } else {
-          arrErrors.stname="";
-      }
-    }
-    if (id === "stLname") {
-      if (regexName.test(value) !== true) {
-          arrErrors.stname="Enter valid name";
-      } else {
-          arrErrors.stname="";
-      }
-    }
-    if(id==="inpDOB"){
-      let year=value.slice(0,4)
-      if(value===""){ 
-        arrErrors.DOB="Please select a date of birth"
-      }
-      else if(year>2002){
-        arrErrors.DOB="Date of birth should be of before 2002"
-      }
-      else{
-        arrErrors.DOB="";
-      }
-    }
-    if(id==="gender"){
-      if(value!=""){
-       arrErrors.gender=""
-      }
-    }
-    if (id === "inpSiblings") {
-      if (regexString.test(value) !== true) {
-          arrErrors.sibling="Enter valid name";
-      } else {
-          arrErrors.sibling="";
-      }
-    }
-    if (id === "Ffname") {
-      if (regexName.test(value) !== true) {
-          arrErrors.Fname="Enter valid name";
-      } else {
-          arrErrors.Fname="";
-      }
-    }
-    if (id === "Flname") {
-      if (regexName.test(value) !== true) {
-          arrErrors.Fname="Enter valid name";
-      } else {
-          arrErrors.Fname="";
-      }
-    }
-    if (id === "fQualification") {
-      if (value.length<6) {
-        arrErrors.fQualification="Enter more than 6 characters";
-    } else {
-      arrErrors.fQualification="";
-    }
-    }
-    if (id === "fPhone") {
-      if (regexPhone.test(value) !== true) {
-          arrErrors.fPhone="Enter valid number";
-      } else {
-        arrErrors.fPhone="";
-      }
-    }
-    if (id === "fEmail") {
-      if (regexEmail.test(value) !== true) {
-        arrErrors.fEmail="Enter valid email";
-      } else {
-        arrErrors.fEmail="";
-      }
-    }
-    if (id === "fOccupation") {
-      if (value.length<6) {
-        arrErrors.fOccupation="Enter more than 6 characters";
-    } else {
-      arrErrors.fOccupation="";
-    }
-    }
-    if (id === "Mfname") {
-      if (regexName.test(value) !== true) {
-          arrErrors.Mname="Enter valid name";
-      } else {
-          arrErrors.Mname="";
-      }
-    }
-    if (id === "Mlname") {
-      if (regexName.test(value) !== true) {
-          arrErrors.Mname="Enter valid name";
-      } else {
-          arrErrors.Mname="";
-      }
-    }
-    if (id === "mQualification") {
-      if (value.length<6) {
-          arrErrors.mQualification="Enter more than 6 characters";
-      } else {
-        arrErrors.mQualification="";
-      }
-    }
-    if (id === "mPhone") {
-      if (regexPhone.test(value) !== true) {
-          arrErrors.mPhone="Enter valid number";
-      } else {
-        arrErrors.mPhone="";
-      }
-    }
-    if (id === "mEmail") {
-      if (regexEmail.test(value) !== true) {
-        arrErrors.mEmail="Enter valid email";
-      } else {
-        arrErrors.mEmail="";
-      }
-    }
-    if (id === "mOccupation") {
-      if (value.length<6) {
-        arrErrors.mOccupation="Enter more than 6 characters";
-    } else {
-      arrErrors.mOccupation="";
-    }
-    }
-    setErrors({...arrErrors})
-  };
-
-  const clickHandlerRegister=()=>{
-    filled="";
-    let flag=true;
-    const onlyInputs = document.querySelectorAll('.container .inp');
-    const elements=[];
-    onlyInputs.forEach(input => {
-      elements.push(input.value)
-      if(input.value1===""||arrErrors.gender!=""){
-        flag=false
-      }
-      else{
-        flag=true
-      }
-    });
-    if(flag==true){
-      alert("You have registered successfully")
-    }
-    else{
-      filled="Enter all the fields"
-    }
-    setfilled(filled)
-    clickHandlerReset();
+  const[Numbers,setNumbers]=useState(numbers)
+  const[Categories,setCategories]=useState(arrCategories)
+  const[btn,setBtn]=useState("Add")
+  
+  const addIncome=()=>{
+    let amt=document.getElementById("incomeAmount").value;
+    numbers.income=parseFloat(parseFloat(numbers.income)+parseFloat(amt)).toFixed(2);
+    calNumbers();
+    document.getElementById("incomeAmount").value="";
   }
 
-  const clickHandlerReset=()=>{
-    arrErrors={stname:"",email:"",address:"",phone:"",gender:"",DOB:"",sibling:"",Fname:"",fQualification:"",fPhone:"",fEmail:"",fOccupation:"",Mname:"",mQualification:"",mPhone:"",mEmail:"",mOccupation:""};
-    setErrors({...arrErrors})
-}
+  const addExpense=()=>{
+    let obj={text:"",amt:0};
+    obj.text=document.getElementById("expenseText").value
+    obj.amt=document.getElementById("expenseAmount").value
+    let category=document.getElementById("selCategory").value
+    document.getElementById("expenseAmount").value=""
+    document.getElementById("expenseText").value=""
+    document.getElementById("selCategory").selectedIndex=0
+    document.getElementById("selCategory").disable=true;
+    if(category>0){
+      if(btn==="Add"){
+        arrCategories[category-1].push(obj)
+        console.log(arrCategories)
+        setCategories([...arrCategories])
+        calNumbers();
+    }
+    else{
+      if(idEdit==category){
+        arrCategories[idEdit-1][indexEdit]=obj;
+        setCategories([...arrCategories])
+      }
+      else{
+        category=parseInt(category)
+        indexEdit=parseInt(indexEdit)
+        console.log(category,indexEdit)
+        console.log(arrCategories[category])
+        arrCategories[category-1].push(obj);
+        arrCategories[idEdit-1].splice(indexEdit,1)
+      }
+    } 
+      calNumbers();
+      setCategories([...arrCategories])
+      setNumbers({...numbers})
+    }
+  }
+
+  const clickDelete=(event)=>{
+    let id="",key=0;
+    id=event.target.parentNode.parentNode.getAttribute("id")
+    key=event.target.parentNode.getAttribute("id")
+    console.log(id,key)
+    arrCategories[id-1].splice(key,1)
+    calNumbers();
+    setCategories([...arrCategories])
+  }
+
+  const calNumbers=()=>{
+    numbers.expense=numbers.totGrocery=numbers.totVeggies=numbers.totTravel=numbers.totMisc=0;
+
+    for(let i=0;i<arrCategories[0].length;i++){
+      numbers.totGrocery=parseFloat(parseFloat(numbers.totGrocery)+parseFloat(arrCategories[0][i].amt)).toFixed(2);
+    }
+    for(let i=0;i<arrCategories[1].length;i++){
+      numbers.totVeggies=parseFloat(parseFloat(numbers.totVeggies)+parseFloat(arrCategories[1][i].amt)).toFixed(2);
+    }
+    for(let i=0;i<arrCategories[2].length;i++){
+      numbers.totTravel=parseFloat(parseFloat(numbers.totTravel)+parseFloat(arrCategories[2][i].amt)).toFixed(2);
+    }
+    for(let i=0;i<arrCategories[3].length;i++){
+      numbers.totMisc=parseFloat(parseFloat(numbers.totMisc)+parseFloat(arrCategories[3][i].amt)).toFixed(2);
+    }
+    numbers.expense=parseFloat(parseFloat(numbers.totGrocery)+parseFloat(numbers.totVeggies)+parseFloat(numbers.totTravel)+parseFloat(numbers.totMisc));
+    numbers.balance=parseFloat(parseFloat(numbers.income)-parseFloat(numbers.expense));
+    setNumbers({...numbers})  
+  } 
+
+  const clickEdit=(event)=>{
+    let id="",key=0;setBtn("Update");idEdit=0;indexEdit=0
+    id=event.target.parentNode.parentNode.getAttribute("id")
+    key=event.target.parentNode.getAttribute("id")
+    idEdit=id;
+    indexEdit=key;
+    console.log(idEdit,indexEdit)
+      document.getElementById("expenseAmount").value=arrCategories[id-1][key].amt;
+      document.getElementById("expenseText").value=arrCategories[id-1][key].text;
+      document.getElementById("selCategory").selectedIndex=id;
+  }
+
   return (
-    <div>
-      <form className="container">
-      <div id="header">Student Registration Form</div>
-      <div><label>Name of the Applicant</label>
-      <div className="fname" ><input onChange={changeHandler} className="inp" type="text" id="stFname" placeholder="First"/><input onChange={changeHandler} type="text" placeholder="Last" className="inp" id="stLname"/></div>
-      <p className="errors">{arrErrors.stname}</p></div>
-      <div><label>Date of Birth</label><input onChange={changeHandler} placeholder="MM/DD/YYYY" type="date" className="inp" id="inpDOB" /><p className="errors">{arrErrors.DOB}</p></div>
-      <div id="gender" onChange={changeHandler}><label>Gender</label><div><input name="gender" type="radio"/><label>Male</label></div><div><input type="radio" name="gender" /><label>Female</label></div><p className="errors">{arrErrors.gender}</p></div>
-      <div><label>Details of Siblings</label><textarea className="inp" id="inpSiblings" onChange={changeHandler} type="text" /> <p className="errors">{arrErrors.sibling}</p></div>
-      <label>Parent's Information</label>
-      <div><label>Father's Name</label>
-      <div className="fname"><input onChange={changeHandler}  className="inp" id="Ffname" type="text" placeholder="First"/><input onChange={changeHandler} type="text" id="Flname" placeholder="Last" className="inp"/></div><p className="errors">{arrErrors.Fname}</p></div>
-      <div><label>Father's Qualification</label><input onChange={changeHandler} type="text" className="inp" id="fQualification" /><p className="errors">{arrErrors.fQualification}</p></div>
-      <div className="phem">
-        <div ><label>Phone</label><input onChange={changeHandler} type="number" id="fPhone" className="inp" placeholder="### ### ####"/><p className="errors">{arrErrors.fPhone}</p></div><div><label>Email</label><input onChange={changeHandler} type="email" className="inp" id="fEmail"/><p className="errors">{arrErrors.fEmail}</p></div>
+    <>
+      <h2>Expense Tracker</h2>
+      <div className="container">
+        <h4>Your Balance</h4>
+        <h1 id="balance">{Numbers.balance}</h1>
+        <div className="inc-exp-container">
+          <div>
+            <h4>Income</h4>
+            <p id="money-plus" className="money plus">{Numbers.income}</p>
+          </div>
+          <div>
+            <h4>Expense</h4>
+            <p id="money-minus" className="money minus">{Numbers.expense}</p>
+          </div>
+        </div>
+        <div className="form-control">
+          <h3>Add New Income</h3>
+          <div id="incomeInp">
+            <input style={{width:"100%"}} type="number" id="incomeAmount" placeholder="Enter amount..." />
+          </div>
+          <button onClick={addIncome} className="btn">
+          Add Income
+        </button>
+        </div>
+        <div className="form-control">
+          <h3>Add New Expense</h3>
+          <div id="incomeInp">
+            <input type="text" id="expenseText" placeholder="Enter text..." />
+            <input type="number" id="expenseAmount" placeholder="Enter amount..." />
+          </div>
+          <select id="selCategory"><option value="0">----Select Category------</option><option value="1">Grocery</option><option value="2">Veggies</option><option value="3">Travelling</option><option value="4">Miscellaneous</option></select>
+          <button onClick={addExpense} className="btn">
+          {btn} Expense
+        </button>
+        </div>
+        <h3>Expenses</h3>
+        <div className="Categories">
+        <div className="header"><h2>Grocery</h2><p>Total- {numbers.totGrocery}/-</p></div>
+        <ul id="1" className="list">
+          {Categories[0].map((item,i)=>{return <li className="minus" id={i} key={i}>{item.text}<span>{item.amt}</span><button className="btnEdit" onClick={clickEdit}>Edit</button><button className="btnDelete" onClick={clickDelete}>Delete</button></li>})}
+        </ul>
+        </div>
+        <div className="Categories">
+        <div className="header"><h2>Veggies</h2><p>Total- {numbers.totVeggies}/-</p></div>
+        <ul id="2" className="list">
+          {Categories[1].map((item,i)=>{return <li className="minus" id={i} key={i}>{item.text}<span>{item.amt}</span><button className="btnEdit" onClick={clickEdit}>Edit</button><button className="btnDelete" onClick={clickDelete}>Delete</button></li>})}
+        </ul>
+        </div>
+        <div className="Categories">
+        <div className="header"><h2>Travelling</h2><p>Total- {numbers.totTravel}/-</p></div>
+        <ul id="3" className="list">
+        {Categories[2].map((item,i)=>{return <li className="minus" id={i} key={i}>{item.text}<span>{item.amt}</span><button className="btnEdit" onClick={clickEdit}>Edit</button><button className="btnDelete" onClick={clickDelete}>Delete</button></li>})}
+        </ul>
+        </div>
+        <div className="Categories">
+        <div className="header"><h2>Miscellaneous</h2><p>Total- {numbers.totMisc}/-</p></div>
+        <ul id="4" className="list">
+        {Categories[3].map((item,i)=>{return <li className="minus" id={i} key={i}>{item.text}<span>{item.amt}</span><button className="btnEdit" onClick={clickEdit}>Edit</button><button className="btnDelete" onClick={clickDelete}>Delete</button></li>})}
+        </ul>
+        </div>
       </div>
-      <div><label>Father's Occupation</label><input className="inp" onChange={changeHandler} type="text" id="fOccupation"/><p className="errors">{arrErrors.fOccupation}</p></div>
-      <div><label>Mother's Name</label>
-      <div className="fname" ><input className="inp" onChange={changeHandler} id="Mfname" type="text" placeholder="First"/><input className="inp" onChange={changeHandler} type="text" id="Mlname" placeholder="Last"/></div><p className="errors">{arrErrors.Mname}</p></div>
-      <div><label>Mother's Qualification</label><input className="inp" id="mQualification" onChange={changeHandler} type="text" /><p className="errors">{arrErrors.mQualification}</p></div>
-      <div className="phem">
-        <div ><label>Phone</label><input className="inp" onChange={changeHandler} type="number" id="mPhone"  placeholder="### ### ####"/><p className="errors">{arrErrors.mPhone}</p></div><div><label>Email</label><input className="inp" onChange={changeHandler} id="mEmail" type="email" /><p className="errors">{arrErrors.mEmail}</p></div>
-      </div>
-      <div><label>Mother's Occupation</label><input className="inp" onChange={changeHandler} type="text" id="mOccupation" /><p className="errors">{arrErrors.mOccupation}</p></div>
-      <div><label>Address</label><input className="inp" onChange={changeHandler} type="text" placeholder="Street Address" id="inpAddress"/><p className="errors">{arrErrors.address}</p></div>
-      <div id="footer"><div><button id="btnRegister" onClick={clickHandlerRegister}>Register Me</button></div>
-      <div><button id="btnReset" type="reset" onClick={clickHandlerReset}>Reset</button></div></div>
-      </form>
-      <p id="empty">{filled}</p>
-    </div>
+    </>
   );
 }
 
