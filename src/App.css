@@ -48,7 +48,19 @@ h4 {
   margin: 0;
   text-transform: uppercase;
 }
-
+h5{
+  font-size: 17px;
+}
+#Income{    
+  border: 1px solid #bbb;
+  padding: 2% 1% 5% 1%;
+  margin: 7% 0;
+}
+#Income h3{
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 .inc-exp-container {
   background-color: #fff;
   box-shadow: var(--box-shadow);
@@ -181,6 +193,11 @@ input[type="number"]{
     border: 0;
     padding: 2px 2px;
     width: 50px;
+}
+.btns{
+    width: 105px;
+    display: flex;
+    justify-content: space-between;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
