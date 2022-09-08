@@ -1,5 +1,4 @@
 import React, { Component, createRef } from "react";
-import Restaurants from "./Restaurants";
 class SignLog extends Component {
   arrUsers = [{email:"aman@gmail.com",phone:9876543210,password:"Pass@1234"},{email:"jaiswal@gmail.com",phone:1234567890,password:"Word@1234"},{email:"user@gmail.com",phone:9999999999,password:"Passcode1!"}];
   upIn=false;refNewEmail=createRef();refNewPhone=createRef();refNewPassword=createRef();refOldEmailPhone=createRef();refOldPassword=createRef();
@@ -113,12 +112,8 @@ class SignLog extends Component {
   }
   render() {
     return (
-      <>
-      <div id='divNavbar'>
-      <i id="menuIcon" className="fa-solid fa-bars"></i>
-      <p id="menuIcon">Explaur<i className="fa-solid fa-utensils"/></p>
-      <a href="#home" id="aSearch" >Search</a>
-  </div><div id="containerSignLog">
+      <><div id="containerSignLog">
+        <h2>Welcome to Explaur! </h2>
          <div id="signLog">
          <div id={this.state.signUpId}>
             <p className="signLogHeading">Sign Up</p>
@@ -147,7 +142,7 @@ class SignLog extends Component {
           </div>
         </div>
       </div>
-      <Restaurants/></>
+      </>
     );
   }
 }

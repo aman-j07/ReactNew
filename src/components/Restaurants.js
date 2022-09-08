@@ -1,27 +1,19 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
+import RestaurantsList from './RestaurantsList';
 
-class Restaurants extends Component {
-    restaurants= [
+let matched=[];
+const Restaurants=()=>{
+    const [Matched,setMatched]=useState(matched)
+    const restaurants= [
             {
                 "id": 1,
                 "name": "Mission Chinese Food",
                 "neighborhood": "Manhattan",
                 "photograph": "1.jpg",
                 "address": "171 E Broadway, New York, NY 10002",
-                "latlng": {
-                    "lat": 40.713829,
-                    "lng": -73.989667
-                },
+                "latlng": {"lat": 40.713829,"lng": -73.989667},
                 "cuisine_type": "Asian",
-                "operating_hours": {
-                    "Monday": "5:30 pm - 11:00 pm",
-                    "Tuesday": "5:30 pm - 12:00 am",
-                    "Wednesday": "5:30 pm - 12:00 am",
-                    "Thursday": "5:30 pm - 12:00 am",
-                    "Friday": "5:30 pm - 12:00 am",
-                    "Saturday": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am",
-                    "Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm"
-                },
+                "operating_hours": {"Monday": "5:30 pm - 11:00 pm","Tuesday": "5:30 pm - 12:00 am","Wednesday": "5:30 pm - 12:00 am","Thursday": "5:30 pm - 12:00 am","Friday": "5:30 pm - 12:00 am","Saturday": "12:00 pm - 4:00 pm, 5:30 pm - 12:00 am","Sunday": "12:00 pm - 4:00 pm, 5:30 pm - 11:00 pm" },
                 "reviews": [
                     {
                         "name": "Steve",
@@ -414,15 +406,32 @@ class Restaurants extends Component {
             }
         ]
     
-  render() {
-    console.log(this.restaurants)
-    return (
-      <div id='home'>
-        <h1>Restaurants</h1>
-        <div></div>
-      </div>
+    const changeHandlerSearch=(event)=>{
+        matched=[];
+      let item=event.target.value;
+      for(let i=0;i<restaurants.length;i++){
+        if(restaurants[i].name.slice(0,item.length).toUpperCase()==item.toUpperCase() || restaurants[i].cuisine_type.slice(0,item.length).toUpperCase()==item.toUpperCase() || restaurants[i].neighborhood.slice(0,item.length).toUpperCase()==item.toUpperCase()){
+            matched.push(restaurants[i])
+        }
+      }
+      setMatched([...matched])
+    }
+
+    return (<>
+        <div id='divNavbar'>
+          <div>
+            <i id="" className="fa-solid fa-bars menuIcon"></i>
+            <p id="explaur" className='menuIcon'>Explaur<i className="fa-solid fa-utensils"/></p>
+        </div>
+        <a href="#search" id="aSearch" >Search</a>
+        </div>
+        <div id='search'>
+         <div id="divSearch"><input onChange={changeHandlerSearch} id="inpSearch" placeholder="Search for restaurant, cuisines or neighbourhood"></input><i id="searchIcon" class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+        <RestaurantsList matched={Matched} />
+        </>
     )
   }
-}
+
 
 export default Restaurants
