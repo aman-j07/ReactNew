@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import RestaurantsList from './RestaurantsList';
 
 let matched=[];
-const Restaurants=()=>{
+const Restaurants=(props)=>{
     const restaurants= [
             {
                 "id": 1,
@@ -424,7 +424,7 @@ const Restaurants=()=>{
             <i id="" className="fa-solid fa-bars menuIcon"></i>
             <p id="explaur" className='menuIcon'>Explaur<i className="fa-solid fa-utensils"/></p>
         </div>
-        <a href="#search" id="aSearch" >Search</a>
+        <div><a href="#search" id="aSearch" >Search</a><a id="aSearch" onClick={props.clickHandler} >Log Out</a></div>
         </div>
         <div id='search'>
          <div id="divSearch"><input onChange={changeHandlerSearch} id="inpSearch" placeholder="Search for restaurant, cuisines or neighbourhood"></input><i id="searchIcon" className="fa-solid fa-magnifying-glass"></i></div>

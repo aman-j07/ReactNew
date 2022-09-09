@@ -4,8 +4,8 @@ import Restaurants from "./components/Restaurants";
 function App() {
   return (
     <div className="container">
-      {/* <SignLog/> */}
-      <Restaurants/>
+      <SignLog/>
+      {/* <Restaurants/> */}
     </div>
   );
 }

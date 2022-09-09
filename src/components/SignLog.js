@@ -1,4 +1,5 @@
 import React, { Component, createRef } from "react";
+import Restaurants from "./Restaurants";
 class SignLog extends Component {
   arrUsers = [{email:"aman@gmail.com",phone:9876543210,password:"Pass@1234"},{email:"jaiswal@gmail.com",phone:1234567890,password:"Word@1234"},{email:"user@gmail.com",phone:9999999999,password:"Passcode1!"}];
   upIn=false;refNewEmail=createRef();refNewPhone=createRef();refNewPassword=createRef();refOldEmailPhone=createRef();refOldPassword=createRef();
@@ -13,6 +14,7 @@ class SignLog extends Component {
        paraNewPassword:"",
        paraOldEmail:"",
        paraOldPassword:"",
+       id:"containerSignLog",
     }
   }
   clickHandlerUser = (event) => {
@@ -45,6 +47,7 @@ class SignLog extends Component {
         if(flag===true){
             if(this.arrUsers[index].password===oldPassword){
                 alert("Welcome"+oldEmailPhone)
+                this.setState({id:"hidden"})
             }
            else{
             alert("Password does not match")
@@ -110,9 +113,18 @@ class SignLog extends Component {
         }
     }
   }
+
+  ClickHandlerLogOut=()=>{
+    this.setState({id:"containerSignLog"})
+  }
+
   render() {
+    let ele=""
+    if(this.state.id=="hidden"){
+      ele=(<div><Restaurants clickHandler={this.ClickHandlerLogOut} /></div>)
+    }
     return (
-      <><div id="containerSignLog">
+      <><div id={this.state.id}>
         <h2>Welcome to Explaur! </h2>
          <div id="signLog">
          <div id={this.state.signUpId}>
@@ -142,6 +154,7 @@ class SignLog extends Component {
           </div>
         </div>
       </div>
+      {ele}
       </>
     );
   }
