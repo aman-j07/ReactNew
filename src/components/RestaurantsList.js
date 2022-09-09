@@ -1,13 +1,14 @@
 import React, { useState } from 'react'
 import RestaurantDetails from './RestaurantDetails'
 
-  let detail={};let flag=false;
+  let detail={};
 const RestaurantsList = (props) => {
   const [id,setId]=useState("restaurantsList")
-  const [Detail,setDetail]=useState(detail)
+  const [Detail,setDetail]=useState(detail);
+  const [flag,setFlag]=useState(false)
 
 const clickHandler=(event)=>{
-  flag=true;
+  setFlag(true)
   detail={};
   let index=0;
   index=event.target.closest("div .item").getAttribute("id")
@@ -19,6 +20,7 @@ const clickHandler=(event)=>{
 
 const clickHandlerClose=()=>{
   setId("restaurantsList")
+  setFlag(false)
 }
 
   if(flag===true){
