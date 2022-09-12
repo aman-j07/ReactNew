@@ -2,22 +2,16 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./components/Home";
-import Cities from "./components/Cities";
-import Drives from "./components/Drives";
-import Blogs from "./components/Blogs";
-import Partners from "./components/Partners";
-import Help from "./components/Help";
+import Products from "./components/Products";
+import Contact from "./components/Contact";
 function App() {
   return (
     <div className="container">
       <Layout/>
         <Routes>
            <Route path="/" element={<Home />} />
-           <Route path="/cities" element={<Cities />} />
-           <Route path="/drives" element={<Drives />} />
-           <Route path="/blogs" element={<Blogs />} />
-           <Route path="/partners" element={<Partners />} />
-           <Route path="/help" element={<Help />} />
+           <Route path="/products" element={<Products />} />
+           <Route path="/contact" element={<Contact />} />
         </Routes>
     </div>
   );

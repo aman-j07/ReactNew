@@ -4,15 +4,14 @@ const Layout = () => {
   return (
     <>
         <div id="navBar">
-          <i class="fa-brands fa-lyft" />
+          <img src="https://educadd.co.in/wp-content/uploads/2022/06/Untitled-design-2022-06-08T030657.832-e1654637921334.png" />
           <div>
-            <Link to="/cities">CITIES</Link>
-            <Link to="/drives">DRIVES</Link>
-            <Link to="/blogs">BLOG</Link>
-            <Link to="/partners">PARTNERS</Link>
-            <Link to="/help">HELP</Link>
+            <Link to="/">HOME</Link>
+            <Link to="/products">OUR PRODUCTS</Link>
+            <Link to="/contact">CONTACT US</Link>
           </div>
         </div>
+        <div id="navBar2"><i class="fa-brands fa-facebook"/><i class="fa-brands fa-instagram"/></div>
     </>
   );
 };
