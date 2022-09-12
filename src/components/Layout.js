@@ -1,17 +1,20 @@
-import {  Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Layout = () => {
   return (
     <>
-      <div id="navBar">
-        <Link to="/">Home</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/event">Event</Link>
-        <Link to="/contact">Contact</Link>
-        <Link to="/feedback">Feedback</Link>
-      </div>
+        <div id="navBar">
+          <i class="fa-brands fa-lyft" />
+          <div>
+            <Link to="/cities">CITIES</Link>
+            <Link to="/drives">DRIVES</Link>
+            <Link to="/blogs">BLOG</Link>
+            <Link to="/partners">PARTNERS</Link>
+            <Link to="/help">HELP</Link>
+          </div>
+        </div>
     </>
-  )
+  );
 };
 
 export default Layout;

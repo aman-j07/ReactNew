@@ -2,21 +2,147 @@
 	margin: 0;
   font-family: "Metropolis",-apple-system,BlinkMacSystemFont,"Helvetica Neue",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 }
+
+#background{
+  height: 606px;
+  background-image: url(https://images.pexels.com/photos/806835/pexels-photo-806835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-size: 100% 100%;
+}
+#background>h1{
+  margin: 0;
+  padding: 10%;
+}
 #navBar{
   display: flex;
   margin: auto;
-  width: 50%;
-  background-color: #191987;
+  width: 100%;
+  background-color: #00000047;
   justify-content: space-evenly;
-  height: 25px;
+  height: 70px;
   font-size: 12px;
   align-items: center;
+  position: absolute;
+  z-index: 2;
 }
-#navBar>*{
+#navBar>div{
+  width: 30%;
+  display: flex;
+  font-size: 15px;
+  justify-content: space-between;
+  margin-left: 23%;
+}
+#navBar>div>a{
 color: white;
 text-decoration: none;
+font-size: 15px;
+}
+#navBar i{
+  color: white;
+  font-size: 50px;
 }
 h1{
   text-align: center;
   margin: 5%
+}
+#inner{
+  display: flex;
+  width: 80%;
+  padding: 8% 0 0 0;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  margin: 0 0 0 14%;
+  height: 65%;
+}
+#inner>p{
+  font-size: 35px;
+  font-weight: 600;
+  width: 31%;
+  margin: 0 0 10% 0;
+}
+#signUp{
+  width: 20%;
+  background-color: #d3d2d2;
+  padding: 2%;
+  border-radius: 4px;
+  z-index: 1;
+  height: 98%;
+}
+#signUp>h2{
+  margin: 0 0 2% 0;
+}
+#signUp>p{
+  font-size: 13px;
+  color: #4a4747;
+  margin: 5% 0;
+}
+#signUp>input{
+  height: 24px;
+  margin: 1% 0;
+  width: 96%;
+}
+#mini{
+  font-size: 11px;
+  color: #4a4747;
+  margin: 2% 0;
+}
+#mini>a{
+  color: #f7127c;
+}
+#btnDriver{
+  width: 100%;
+    height: 30px;
+    background-color: #f7127c;
+    border: 0;
+    color: white;
+    border-radius: 2px;
+    font-size: 13px;
+    font-weight: 600;
+    margin: 4% 0;
+}
+#footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #bebfc3;
+  width: 100%;
+  height: 140px;
+  display: flex;
+  align-items: center;
+}
+#footer>div{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 65%;
+  width: 42%;
+  margin: 1% 10%;
+}
+#footer p{
+  font-size: 13px;
+  color: #4a4747;
+}
+#footer h3{
+  font-size: 25px;
+}
+#inpHours{
+  height: 23px;
+  border: 0;
+  width: 20%;
+  margin: 0 1% 0 0;
+}
+#inpCity{
+  height: 23px;
+  border: 0;
+  width: 30%;
+  margin: 0 1% 0 0;
+}
+#btnCalculate{
+  height: 25px;
+  background-color: #f7127c;
+  border: 0;
+  color: white;
+  border-radius: 2px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 0 3%
 }
