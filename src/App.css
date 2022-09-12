@@ -4,65 +4,146 @@
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
-
-#background {
-  height: 606px;
-  background-image: url(https://images.pexels.com/photos/806835/pexels-photo-806835.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-  background-size: 100% 100%;
-}
-#background > h1 {
-  margin: 0;
-  padding: 10%;
-}
 #navBar {
+  height: 75px;
   display: flex;
-  margin: auto;
-  width: 100%;
-  justify-content: space-evenly;
-  height: 60px;
-  font-size: 12px;
   align-items: center;
-}
-#navBar > div {
-  width: 20%;
-  display: flex;
-  font-size: 15px;
+  background-color: #09094c;
   justify-content: space-between;
-  margin-left: 23%;
+  padding: 0 10%;
+}
+#navBar > h2 {
+  color: white;
+  font-size: 35px;
+  font-family: "Source Serif Pro", serif;
 }
 #navBar > div > a {
   text-decoration: none;
-  font-size: 13px;
-  color: #4a4747;
-}
-#navBar img {
-  height: 80%;
-  width: 10%;
-}
-#navBar2 {
-  height: 40px;
   color: white;
-  background-color: #010164;
+  font-size: 14px;
+  margin: 0 5px;
+}
+#containerSignLog {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  width: 100%;
+  margin: auto;
+  background-size: 100% 135%;
+  height: 530px;
+  background-image: url(https://assets.vogue.com/photos/60a8045ad5043f059fb1d950/master/pass/Bandits%20Food%206.jpg);
 }
-#navBar2 > i {
-  font-size: 24px;
-  margin: 0 1% 0 0;
+#signLog {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 2% auto;
+  background-color: #dfdfdfd1;
+  border-radius: 5px;
+  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
+    rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px,
+    rgb(0 0 0 / 9%) 0px -3px 5px;
+  padding: 1% 5%;
 }
-#home{
-  background-image: url(./components/Home.png);
-  height: 500px;
-  background-size: 100% 100%;
+.signLogHeading {
+  font-size: 22px;
 }
-#products{
-  background-image: url(./components/products.png);
-  height: 500px;
-  background-size: 100% 100%;
+#signLog > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
-#contact{
-  background-image: url(./components/contact.png);
-  height: 500px;
-  background-size: 100% 100%;
+#signLog button {
+  width: 183px;
+  background-color: #09094c;
+  border: 1px solid #8d8888;
+  border-radius: 3px;
+  height: 30px;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+#signLog input {
+  height: 22px;
+  border-radius: 3px;
+  border: 0.5px solid #8d8888;
+}
+input:focus {
+  outline: none;
+}
+#hidden{
+  
+}
+#signUp {
+  height: 400px;
+  margin: 4% 0;
+}
+#logIn {
+  height: 150px;
+}
+#signUp > div {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  justify-content: space-between;
+}
+#logIn > div {
+  display: flex;
+  flex-direction: column;
+  height: 60px;
+  justify-content: space-between;
+}
+.paraError {
+  color: red;
+  font-size: 12px;
+  font-weight: 400;
+  width: 178px;
+}
+.paraLink a {
+  color: #09094c;
+  text-decoration: underline;
+  cursor: grab;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#feed{
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.content{
+  width: 80%;
+  height: 350px;
+  border: 1px solid #978e8e;
+  border-radius: 4px;
+  padding: 1%;
+  margin: 1% 0;
+}
+#image{
+  display: flex;
+  height: 78%;
+  justify-content: center;
+  border: 1px solid #80808061;
+  margin: 0 0 1% 0;
+}
+video{
+  height: 100%;
+  max-width: 100%;
+}
+#like{
+  display: flex;
+}
+#like>i{
+font-size: 25px;
+margin: 0 3% 0 0;
+}
+#caption{
+  font-size: 12px;
+  margin: 1% 0;
 }

@@ -3,15 +3,13 @@ import { Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-        <div id="navBar">
-          <img src="https://educadd.co.in/wp-content/uploads/2022/06/Untitled-design-2022-06-08T030657.832-e1654637921334.png" />
-          <div>
-            <Link to="/">HOME</Link>
-            <Link to="/products">OUR PRODUCTS</Link>
-            <Link to="/contact">CONTACT US</Link>
-          </div>
+      <div id="navBar">
+        <h2>Socialify</h2>
+        <div>
+          <Link to="/">Sign Up</Link>
+          <Link to="/login">Log In</Link>
         </div>
-        <div id="navBar2"><i class="fa-brands fa-facebook"/><i class="fa-brands fa-instagram"/></div>
+      </div>
     </>
   );
 };
