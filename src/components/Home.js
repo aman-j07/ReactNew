@@ -46,6 +46,8 @@ const Home = () => {
         console.log(errors)
         if(Object.values(errors).every((v) => v === "")){
             alert("Account created")
+            let obj={name:name,email:email,username:username,password:password,phone:phone,country:country,city:city,pincode:pincode}}
+            arrUsers.push(obj)
             const List= document.querySelectorAll("input");
             List.forEach(item=>{item.value="";item.style.border="none"})
         }
