@@ -44,18 +44,16 @@ const Home = () => {
     }
         setErrors({...errors})
         console.log(errors)
+        let obj={}
         if(Object.values(errors).every((v) => v === "")){
             alert("Account created")
-            let obj={name:name,email:email,username:username,password:password,phone:phone,country:country,city:city,pincode:pincode}}
+            obj={name:name,email:email,username:username,password:password,phone:phone,country:country,city:city,pincode:pincode}}
             arrUsers.push(obj)
             const List= document.querySelectorAll("input");
             List.forEach(item=>{item.value="";item.style.border="none"})
-        }
+        
     }
-    const changeAlphabet=(event)=>{
-
-    }
-
+   
   return (
     <div id="containerSignLog">
      <div id="signLog">
