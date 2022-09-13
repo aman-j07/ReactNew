@@ -4,6 +4,9 @@
     Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol";
 }
+.container{
+  background-color: whitesmoke;
+}
 #navBar {
   height: 75px;
   display: flex;
@@ -88,6 +91,7 @@
 
  #products{
  	overflow: hidden;
+  margin: 2% 0 5% 0;
  }
 
  #products .product{
@@ -103,6 +107,11 @@
  	font-size: 16px;
  	font-weight: light;
  	color: #000000;
+ }
+ #products>h2{
+  text-align: center;
+  font-family: "Source Serif Pro", serif;
+  font-size: 30px;
  }
 
 
@@ -159,10 +168,12 @@
   flex-flow: column;
   justify-content: flex-start;
   padding: 1%;
-  width: 50%;
+  width: 54%;
   margin: auto;
   border: 1px solid #a1a1a1;
   border-radius: 5px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 #cartHead{
 	display: flex;
@@ -173,13 +184,13 @@
 	font-size: large;
 }
 table, th, tr {
-	border-bottom: 1px solid #a1a1a1;
+	border-top: 1px solid #a1a1a1;
 	border-collapse: collapse;
-  margin: 1%;
   }
   #tableCart td{
 	align-items: center;
 	justify-content: center;
+  padding: 2% 0;
   }
   #tableCart h3{
 	margin: 0% 2%;
@@ -216,12 +227,25 @@ input::-webkit-inner-spin-button {
 	width: 30px;
 	border-radius: 20%;
 }
+#paraQuantity{
+  margin: 0 1% !important;
+}
+.btnUpdate{
+  height: 18px;
+  width: 20px;
+  padding: 0% 0 5% 0;
+  font-size: 20px;
+}
 .fa-solid fa-trash-can{
 	height: max-content;
 	width: max-content;
 }
+#hidden{
+  height: 0;
+  visibility: hidden;
+}
 #gTotal{
 	font-size: large;
-	margin: 2% 0% 0% 28%;
+	margin: 2% 0% 0% 70%;
 
 }

@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <div id="navBar">
         <h2>ShopIt!</h2>
-        <div><i class="fa-solid fa-cart-shopping"/></div>
+        <div><i className="fa-solid fa-cart-shopping"/></div>
     </div>
   )
 }
