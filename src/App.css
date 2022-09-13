@@ -17,145 +17,211 @@
   font-size: 35px;
   font-family: "Source Serif Pro", serif;
 }
-#navBar > div > a {
-  text-decoration: none;
+#navBar > div > i {
   color: white;
-  font-size: 14px;
+  font-size: 20px;
   margin: 0 5px;
 }
-#containerSignLog {
+#header, #main, #footer{
+	padding: 20px;
+}
+
+#main{
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+#logo{
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+
+#menu, 
+#footer-links{
+	list-style: none;
+	overflow: hidden;
+}
+
+#menu li, 
+#footer-links li{
+	float: left;
+}
+
+#menu li a, 
+#footer-links li a{
+	padding: 10px 50px;
+	text-align: center;
+	display: block;
+	text-decoration: none;
+	color: #000000;	
+}
+
+#menu li a{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#menu li:first-child a, 
+#footer-links li:first-child a{
+	padding-left: 0px;
+}
+
+#footer-links{
+	width: 40%;
+	margin: 0 auto;
+}
+
+/*
+ * Home Page
+ */
+/* comment */
+ #main p{
+	font-size: 15px;
+	word-spacing: 2px;
+	margin-bottom: 10px;
+	text-align: justify;
+}
+
+/*
+ * Product Page
+ */
+
+ #products{
+ 	overflow: hidden;
+ }
+
+ #products .product{
+ 	float: left;
+ 	margin-bottom: 20px;
+ 	max-width: 230px;
+ 	padding: 20px;
+ 	text-align: center;
+ }
+
+ #products .product .title a{
+ 	text-decoration: none;
+ 	font-size: 16px;
+ 	font-weight: light;
+ 	color: #000000;
+ }
+
+
+ #products .product .add-to-cart, #contact-form .submit input[type="submit"] {
+	width:500px;
+	background: #3e9cbf; 
+	padding: 8px 14px 10px; 
+	border:1px solid #3e9cbf;
+	cursor:pointer; 
+	font-size:1.2em;
+	display: block;
+	max-width: 60%;
+	margin: 20px auto 0px;
+	text-decoration: none;
+	text-shadow: 0 -1px 0px rgba(0, 0, 0, 0.3); 
+	color: #fff;
+	-webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+	box-shadow: inset 0px 1px 0px #3e9cbf, 0px 5px 0px 0px #205c73, 0px 10px 5px #999;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+ #products .product .add-to-cart:hover,  
+ #products .product .add-to-cart:focus, 
+ #contact-form .submit input[type="submit"]:hover, 
+ #contact-form .submit input[type="submit"]:focus {
+	color:#dfe7ea;
+	-webkit-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+	-moz-box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+	box-shadow: inset 0px 1px 0px #3e9cbf, 0px 2px 0px 0px #205c73, 0px 2px 5px #999;
+}
+
+#contact-form .submit input[type="submit"]{
+	width: 100px;
+	display: inline;
+	font-size: 1em;
+}
+
+
+#contact-form label, #contact-form .form-control{
+	display: block;
+	margin-bottom: 10px;
+	padding: 10px 0px;
+} 
+
+#contact-form .form-control{
+	border-radius: 5px;
+	border: 1px solid #cccccc; 
+}
+
+#divCart{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  flex-flow: column;
+  justify-content: flex-start;
+  padding: 1%;
+  width: 50%;
   margin: auto;
-  background-size: 100% 135%;
-  height: 530px;
-  background-image: url(https://assets.vogue.com/photos/60a8045ad5043f059fb1d950/master/pass/Bandits%20Food%206.jpg);
-}
-#signLog {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 2% auto;
-  background-color: #dfdfdfd1;
+  border: 1px solid #a1a1a1;
   border-radius: 5px;
-  box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
-    rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px,
-    rgb(0 0 0 / 9%) 0px -3px 5px;
-  padding: 1% 5%;
 }
-.signLogHeading {
-  font-size: 22px;
+#cartHead{
+	display: flex;
+    justify-content: space-between;
+	margin-bottom: 1%;
 }
-#signLog > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+#tableCart{
+	font-size: large;
 }
-#signLog button {
-  width: 183px;
-  background-color: #09094c;
-  border: 1px solid #8d8888;
-  border-radius: 3px;
-  height: 30px;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
+table, th, tr {
+	border-bottom: 1px solid #a1a1a1;
+	border-collapse: collapse;
+  margin: 1%;
+  }
+  #tableCart td{
+	align-items: center;
+	justify-content: center;
+  }
+  #tableCart h3{
+	margin: 0% 2%;
+  }
+#tableCart p{
+	display: inline;
+	margin: 0% 2% ;
 }
-#signLog input {
-  height: 22px;
-  border-radius: 3px;
-  border: 0.5px solid #8d8888;
-}
-a{
-  cursor: grab;
-}
-input:focus {
-  outline: none;
-}
-#hidden{
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
-}
-#signUp {
-  height: 400px;
-  margin: 4% 0;
-}
-#logIn {
-  height: 150px;
-}
-#signUp > div {
-  display: flex;
-  flex-direction: column;
-  height: 70%;
-  justify-content: space-between;
-}
-#logIn > div {
-  display: flex;
-  flex-direction: column;
-  height: 60px;
-  justify-content: space-between;
-}
-.paraError {
-  color: red;
-  font-size: 12px;
-  font-weight: 400;
-  width: 178px;
-}
-.paraErrorBig {
-  color: red;
-    font-size: 14px;
-    font-weight: 400;
-    width: 178px;
-    text-align: center;
-}
-.paraLink a {
-  color: #09094c;
-  text-decoration: underline;
-  cursor: grab;
+.inpQuantity{
+	width: 5%;
+	height: 20px;
+	text-align: center;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-#feed{
-  width: 50%;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+#cross{
+	vertical-align: top;
+	padding: 1%;
+	width: 5%;
 }
-.content{
-  width: 80%;
-  height: 350px;
-  border: 1px solid #978e8e;
-  border-radius: 4px;
-  padding: 1%;
-  margin: 1% 0;
+.cross{
+	width: 25px;
+    height: 25px;
+    border-radius: 50%;
 }
-#image{
-  display: flex;
-  height: 78%;
-  justify-content: center;
-  border: 1px solid #80808061;
-  margin: 0 0 1% 0;
+.cross:hover{
+	cursor: grab;
 }
-video{
-  height: 100%;
-  max-width: 100%;
+#btnEmptyCart{
+	height: 30px;
+	width: 30px;
+	border-radius: 20%;
 }
-#like{
-  display: flex;
+.fa-solid fa-trash-can{
+	height: max-content;
+	width: max-content;
 }
-#like>i{
-font-size: 25px;
-margin: 0 3% 0 0;
-}
-#caption{
-  font-size: 12px;
-  margin: 1% 0;
+#gTotal{
+	font-size: large;
+	margin: 2% 0% 0% 28%;
+
 }
