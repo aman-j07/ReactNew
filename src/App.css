@@ -69,11 +69,16 @@
   border-radius: 3px;
   border: 0.5px solid #8d8888;
 }
+a{
+  cursor: grab;
+}
 input:focus {
   outline: none;
 }
 #hidden{
-  
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
 }
 #signUp {
   height: 400px;
@@ -99,6 +104,13 @@ input:focus {
   font-size: 12px;
   font-weight: 400;
   width: 178px;
+}
+.paraErrorBig {
+  color: red;
+    font-size: 14px;
+    font-weight: 400;
+    width: 178px;
+    text-align: center;
 }
 .paraLink a {
   color: #09094c;

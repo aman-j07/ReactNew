@@ -1,11 +1,10 @@
 import React, { useState } from 'react'
 
-const arrUsers=[{name:"Aman",email:"aman@gmail.com",username:"Aman7",password:"Pass@1234",phone:"1234567890",country:"India",city:"Lucknow",pincode:"226001"}];
-let errors={phone:"",email:"",username:"",userphone:"",useremail:""}
+let errors={phone:"",email:"",username:"",userphone:"",useremail:"",empty:""}
 let newUser=false;
-const Home = () => {
+const Home = (props) => {
     const [Errors,setErrors]=useState({})
-
+    const arrUsers=props.arrUsers;
     const SignUp=()=>{
         errors={};newUser=true
         let name=document.getElementById("newName").value;
@@ -31,24 +30,28 @@ const Home = () => {
             }
         }
         if(newUser==true){
-        let regexPhone=/^\d{10}$/;
-        let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-        if(regexEmail.test(email)!=true){
-            document.getElementById("newEmail").style.border="1px solid red"
-            errors.email="Enter valid email"
+           let regexPhone=/^\d{10}$/;
+           let regexEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+           if(regexEmail.test(email)!=true){
+               document.getElementById("newEmail").style.border="1px solid red"
+               errors.email="Enter valid email"
+           }
+           if(regexPhone.test(phone)!=true){
+               document.getElementById("newPhone").style.border="1px solid red"
+               errors.phone="Enter valid phone"
+           }
+           if(name==""||username==""||password==""||email==""||phone==""||country==""||pincode==""||city==""){
+               errors.empty="*Please enter all the fields"
+           }
         }
-        if(regexPhone.test(phone)!=true){
-            document.getElementById("newPhone").style.border="1px solid red"
-            errors.phone="Enter valid phone"
-        }
-    }
         setErrors({...errors})
         console.log(errors)
         let obj={}
         if(Object.values(errors).every((v) => v === "")){
             alert("Account created")
-            obj={name:name,email:email,username:username,password:password,phone:phone,country:country,city:city,pincode:pincode}}
-            arrUsers.push(obj)
+            obj={name:name,email:email,username:username,password:password,phone:phone,country:country,city:city,pincode:pincode}
+            props.clickHandler(obj);
+        }
             const List= document.querySelectorAll("input");
             List.forEach(item=>{item.value="";item.style.border="none"})
         
@@ -71,6 +74,7 @@ const Home = () => {
           <input className='inp' placeholder="Enter your city" type="text" id="newCity"/>  
           <input className='inp' placeholder="Enter your pincode" type="number" id="newPincode"/> 
         </div>
+        <p className='paraErrorBig'>{Errors.empty}</p>
         <button onClick={SignUp} id="newSubmit">
           Sign Up
         </button>

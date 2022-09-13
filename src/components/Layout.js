@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 
-const Layout = () => {
+const Layout = (props) => {
   return (
     <>
-      <div id="navBar">
+      <div id={props.id}>
         <h2>Socialify</h2>
         <div>
           <Link to="/">Sign Up</Link>
