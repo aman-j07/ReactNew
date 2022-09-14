@@ -1,13 +1,10 @@
 import "./App.css";
-import A from "./components/A";
-import { UserProvider } from "./components/Context";
+import Parent from "./components/Parent";
 
 function App() {
   return (
     <div className="container">
-      <UserProvider value="Aman">
-        <A />
-      </UserProvider>
+      <Parent/>
     </div>
   );
 }
