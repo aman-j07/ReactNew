@@ -3,7 +3,7 @@ import NumToWord from "./components/NumToWord";
 
 function App() {
   return (
-    <div className="container">\
+    <div className="container">
     <NumToWord/>
     </div>
   );
