@@ -1,10 +1,10 @@
 import "./App.css";
-import CurrencyConvertor from "./components/CurrencyConvertor";
+import TextUtility from "./components/TextUtility";
 
 function App() {
   return (
     <div className="container">
-      <CurrencyConvertor/>
+      <TextUtility/>
     </div>
   );
 }
