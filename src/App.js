@@ -1,10 +1,10 @@
 import "./App.css";
-import Parent from "./components/Parent";
+import CurrencyConvertor from "./components/CurrencyConvertor";
 
 function App() {
   return (
     <div className="container">
-      <Parent/>
+      <CurrencyConvertor/>
     </div>
   );
 }
