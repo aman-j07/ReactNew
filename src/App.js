@@ -1,10 +1,10 @@
 import "./App.css";
-import TextUtility from "./components/TextUtility";
+import NumToWord from "./components/NumToWord";
 
 function App() {
   return (
-    <div className="container">
-      <TextUtility/>
+    <div className="container">\
+    <NumToWord/>
     </div>
   );
 }
