@@ -1,5 +1,8 @@
-p {
-  margin: 6px 2px;
+* {
+  margin: 0;
+}
+.container {
+  height: 750px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

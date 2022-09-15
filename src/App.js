@@ -1,10 +1,10 @@
 import "./App.css";
-import NumToWord from "./components/NumToWord";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="container">
-    <NumToWord/>
+      <Navbar/>
     </div>
   );
 }
