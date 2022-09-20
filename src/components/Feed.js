@@ -4,7 +4,7 @@ import BlogDetails from "./BlogDetails";
 
 const Feed = (props) => {
   const [id,setId]=useState("hidden")
-  const [idDetail,setIdDetail]=useState(["feed",{},"hidden"])
+  const [idDetail,setIdDetail]=useState("content")
   const [blogs,setBlogs]=useState([{
     head: "How to Send Personalized Text Messages from Google Sheets",
     description:
@@ -51,10 +51,15 @@ const Feed = (props) => {
   }
 
   const expandBlog=(e)=>{
-    let index=e.target.closest("#content").getAttribute("index");
-    console.log(blogs[index])
-    window.scrollTo(0, 160)
-    setIdDetail(["hidden",blogs[index],"blogComponent"])
+    let arr=document.querySelectorAll(".item");
+    arr.forEach(element => {
+      element.setAttribute("id","content");
+    });
+    console.log(arr)
+    let index=e.target.closest("#content").setAttribute("id","contentFull")
+    // console.log(blogs[index])
+    // window.scrollTo(0, 160)
+    // setIdDetail(["hidden",blogs[index],"blogComponent"])
   }
 
   const closeBlog=()=>{
@@ -74,10 +79,10 @@ const Feed = (props) => {
       <div id={id}>
         <h2>Add New Blog</h2><form id="formBlog"><input id="inpTitle" placeholder="Enter Title" type="text"/>
            <textarea id="inpDescription" placeholder="Enter Description" type="text"/></form><button onClick={addBlog}>Add</button></div>
-      <div id={idDetail[0]}>
+      <div id="feed">
         {blogs.map((item,i) => {
           return (<>
-            <div index={i} onClick={expandBlog} id="content">
+            <div index={i} onClick={expandBlog} className="item" id={idDetail}>
               <div id="header">{item.head}</div>
               <div id="body">{item.description}</div>
             </div>
@@ -85,7 +90,7 @@ const Feed = (props) => {
           );
         })}
       </div>
-      <BlogDetails obj={idDetail[1]} id={idDetail[2]} closeBlog={closeBlog}/>
+      {/* <BlogDetails obj={idDetail[1]} id={idDetail[2]} closeBlog={closeBlog}/> */}
     </>
   );
 };

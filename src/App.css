@@ -26,18 +26,19 @@
 #containerSignLog {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   width: 100%;
   margin: auto;
-  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-size: 50% 108%;
   height: 530px;
-  background-image: url(https://www.salvationist.org.uk/sites/salvationists/files/styles/card/public/resource_thumbnails/2021-12/Connect%20Thumbnail_1.PNG?h=0a07fdbe&itok=hX5PdCAJ);
+  background-image: url(https://image.shutterstock.com/shutterstock/photos/228370189/display_1500/stock-vector-social-media-background-people-connecting-through-modern-technology-devices-228370189.jpg);
 }
 #signLog {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 2% auto;
+  margin: 2% 14%;
   background-color: #dfdfdfd1;
   border-radius: 5px;
   box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
@@ -164,6 +165,9 @@ textarea:focus{
 }
 #content *{
   cursor: grab;
+}
+#contentFull{
+  height: auto !important;
 }
 hr{
   width: 110%;
