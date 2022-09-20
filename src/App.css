@@ -5,64 +5,8 @@ body{
 .App{
     width: 100%;
 }
-#divContainer{
-    display: flex;
-    width: 20%;
-    flex-direction: column;
-    margin: 2% auto;
-    height: 200px;
-    align-items: center;
-    background-color: #dfdfdf;
-    border-radius: 5px;
-}
-#divHead{
-    font-size: 20px;
-    background-color: #6a62e5;
-    width: 100%;
-    padding: 3% 0;
-    color: white;
-    border-radius: 5px 5px 0px 0px;
-    text-align: center;
-}
-#divInputs{
-    height: 45%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 5% 0;
-}
-#divInputs input{
-    width: 25%;
-    height: 100%;
-    font-size: 15px;
-    padding: 0 2px;
-}
-#divInputs div{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-#btnCalculate{
-    padding: 5px 10px;
-    border: 0;
-    width: 74%;
-    background-color: #6a62e5;
-    color: white;
-    border-radius: 3px;
-    font-size: 15px;
-    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-}
-
-#divResult{
-    padding: 0px 0 25px 0;
-    height: 20%;
-}
-#divResult>*{
-    margin: 10px;
-    text-align: center;
-    font-size: 20px;
-    color: #624f83;
+#colorPicker{
+  margin: 2% 20%;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
