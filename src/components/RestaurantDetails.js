@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 
 const RestaurantDetails = (props) => {
+  console.log(props.detail)
   const [quantity,setQuantity]=useState(1);
 
   const updateQuantity=(e)=>{
@@ -29,8 +30,8 @@ const RestaurantDetails = (props) => {
           <p id="detailWeight">{props.detail.weight}</p>
           <p id="detailPrice">₹{props.detail.price}</p>
           <div id="detailDescription"><p>Desciption:</p><p id="paraDescription">Mewa Bites are the perfect sweet gifts that are exchanged on festive occasions such as Diwali, Holi, Rakhshabandhan and Ganesh Chaturthi. Place an online order of these rich and crunchy quick Bites of dry fruits immersed in milk solids and sugar and get delivery at your home. We deliver sweets all over India & internationally across the USA, UK, Singapore & many other countries.</p></div>
-          <div id="divAdd"><button onClick={updateQuantity}>-</button><p id="itemQuantity">{quantity}</p><button onClick={updateQuantity}>+</button></div>
-          <button id="btnAdd" onClick={Add} index={props.detail.id}>Add to Cart</button>
+          <div  id='addBtns'><div id="divAdd"><button onClick={updateQuantity}>-</button><p id="itemQuantity">{quantity}</p><button onClick={updateQuantity}>+</button></div>
+          <button id="btnAdd" onClick={Add} index={props.detail.id}>Add to Cart</button></div>
         </div>
     </div>
     </>

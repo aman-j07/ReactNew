@@ -8,34 +8,35 @@ let matched = [];
 const Restaurants = (props) => {
   const restaurants=props.restaurants;
 
-  const [Matched, setMatched] = useState(restaurants);
+  let [Matched, setMatched] = useState(restaurants);
   const changeHandlerSearch = (event) => {
     if(event.key==="Enter"){
-    matched = [];
+    Matched = [];
     let item = event.target.value;
     for (let i = 0; i < restaurants.length; i++) {
       if (
         restaurants[i].name.slice(0, item.length).toUpperCase() ==
           item.toUpperCase()) {
-        matched.push(restaurants[i]);
+        Matched.push(restaurants[i]);
       }
     }
-    setMatched([...matched]);
+    setMatched([...Matched]);
 }
   };
 
   const Filter=(e)=>{
     if(e.target.value!="Filter By"){
-        matched = [];
+        Matched = [];
         let index = e.target.selectedIndex;
         for (let i = 0; i < restaurants.length; i++) {
           if (
             restaurants[i].category==index) {
-            matched.push(restaurants[i]);
+            Matched.push(restaurants[i]);
           }
         }
     }
-    setMatched([...matched]);
+    setMatched([...Matched]);
+    console.log(Matched)
   }
 
   const Sort=(e)=>{

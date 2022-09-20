@@ -219,6 +219,7 @@ button{
   width: 90%;
   border: none;
   height: 90%;
+  color: black;
 }
 #searchIcon{
 /* font-size: 30px; */
@@ -232,13 +233,15 @@ button{
 }
 #sortFilter>select{
   width: 120px;
-  height: 35px;
-  font-size: 15px;
+    height: 35px;
+    font-size: 15px;
+    background-color: #ffa500a8;
+    border: 0;
+    border-radius: 3px;
 }
-
-
-
-
+#sortFilter>select option{
+  background-color: white;
+}
 #list{
   display: grid;
   grid-template-columns: repeat(auto-fill,minmax(224px,1fr));
@@ -255,6 +258,7 @@ button{
   border-radius: 10px;
   cursor: grab;
   overflow: hidden;
+  border: 2px solid #1c9cd947;
 }
 .item p{
   display: inline;
@@ -297,7 +301,7 @@ button{
   display: flex;
   padding: 2%;
   margin: 2% 0;
-  background-color: whitesmoke;
+  background-color: #79aec742;
   justify-content: center;
 }
 #detail>*{
@@ -330,7 +334,7 @@ button{
 #divAdd button{
     width: 32%;
     height: 100%;
-    background-color: orange;
+    background-color: #c52929d6;
   color: white;
 }
 #divAdd p{
@@ -339,12 +343,17 @@ button{
   line-height: 180%;
   text-align: center;
 }
+#addBtns{
+  display: flex;
+  align-items: center;
+}
 #btnAdd{
   background-color: orange;
   color: white;
   width: 32%;
   height: 10%;
   border-radius: 20px;
+  margin: 0 9%;
 }
 #detailWeight{
   color: #544f4f;
@@ -359,6 +368,7 @@ button{
 #paraDescription{
   font-size: 13px;
   color: #544f4f;
+  width: 77%;
 }
 #btnClose{
   position: absolute;
@@ -372,21 +382,21 @@ button{
   color: white;
 }
 #divCart{
-  /* background-color: #e5e5e5b0; */
-  background-color: #ef921ea6;
+  background-color: #c3e1ed;
     width: 75%;
     margin: auto;
     border-radius: 3px;
     padding: 2%;
     box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
-#divCart *{
+/* #divCart *{
   color: white;
-}
+} */
 #divCart>h2{
   text-align: center;
-    font-size: 50px;
-    font-family: 'Satisfy', cursive;
+  font-size: 50px;
+  font-family: 'Satisfy', cursive;
+  color: #1f45ffad;
 }
 #cartTable{
   width: 70%;
