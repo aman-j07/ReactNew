@@ -1,5 +1,7 @@
 import React, { Component, createRef } from "react";
 import { Link } from "react-router-dom";
+import amazon from './amazon.png'
+
 class SignLog extends Component {
   arrUsers = [{email:"",phone:9876543210,password:""},{email:"jaiswal@gmail.com",phone:1234567890,password:"Word@1234"},{email:"user@gmail.com",phone:9999999999,password:"Passcode1!"}];
   upIn=false;refNewEmail=createRef();refNewPhone=createRef();refNewPassword=createRef();refOldEmailPhone=createRef();refOldPassword=createRef();
@@ -116,15 +118,17 @@ class SignLog extends Component {
   render() {
     return (
       <><div id={this.state.id}>
-        <h2>Welcome to TS</h2>
-        <h4>Every toy have a Spirit of Joy.</h4>
+        <img src={amazon}/>
          <div id="signLog">
          <div id={this.state.signUpId}>
             <p className="signLogHeading">Sign Up</p>
             <div>
-              <input onBlur={this.ChangeHandlerInp} ref={this.refNewEmail} placeholder="Enter your email" type="email" id="newEmail"/><p className="paraError">{this.state.paraNewEmail}</p>
-              <input onBlur={this.ChangeHandlerInp} ref={this.refNewPhone} placeholder="Enter your number" type="number" id="newPhone"/><p className="paraError">{this.state.paraNewPhone}</p>
-              <input onBlur={this.ChangeHandlerInp} ref={this.refNewPassword} placeholder="Enter new password" type="password" id="newPassword"/><p className="paraError">{this.state.paraNewPassword}</p>
+              <label id="signLogLabels">Email</label>
+              <input onBlur={this.ChangeHandlerInp} ref={this.refNewEmail}  type="email" id="newEmail"/><p className="paraError">{this.state.paraNewEmail}</p>
+              <label id="signLogLabels">Phone</label>
+              <input onBlur={this.ChangeHandlerInp} ref={this.refNewPhone} type="number" id="newPhone"/><p className="paraError">{this.state.paraNewPhone}</p>
+              <label id="signLogLabels">Password</label>
+              <input onBlur={this.ChangeHandlerInp} ref={this.refNewPassword} type="password" id="newPassword"/><p className="paraError">{this.state.paraNewPassword}</p>
             </div>
             <button id="newSubmit" onClick={this.clickHandlerUser}>
               Sign Up
@@ -134,8 +138,10 @@ class SignLog extends Component {
           <div id={this.state.logInId} >
             <p className="signLogHeading" >Log In</p>
             <div>
-              <input ref={this.refOldEmailPhone} placeholder="Enter email or phone number" id="newEmailPhone"/><p className="paraError">{this.state.paraOldEmail}</p>
-              <input ref={this.refOldPassword} placeholder="Enter your password" type="password" id="oldPassword"/><p className="paraError">{this.state.paraOldPassword}</p>
+            <label id="signLogLabels">Email</label>
+              <input ref={this.refOldEmailPhone} id="newEmailPhone"/><p className="paraError">{this.state.paraOldEmail}</p>
+              <label id="signLogLabels">Password</label>
+              <input ref={this.refOldPassword} type="password" id="oldPassword"/><p className="paraError">{this.state.paraOldPassword}</p>
    
             </div>
            {this.state.login}

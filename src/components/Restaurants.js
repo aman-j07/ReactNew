@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import RestaurantsList from "./RestaurantsList";
+import amazon2 from './amazon2.png'
+import india from './india .png'
 
 const Restaurants = (props) => {
   const restaurants=props.restaurants;
@@ -48,36 +50,44 @@ const Restaurants = (props) => {
   return (
     <>
       <div id="divNavbar">
-          <p id="pLogo">ToyShop</p>
+          <img id="logoImg" src={amazon2} />
+          <div id="divLocation">
+          <i class="fa-solid fa-location-dot"/>
+            <div className="navBarDivs"><p className="navBarDivHeads">Deliver to Aman</p>
+            <p className="navBarDivHeadsMini">Lucknow 226004</p></div>
+          </div>
         <div id="divSearch">
           <input
             onKeyDown={changeHandlerSearch}
             id="inpSearch"
             placeholder="Search for your favorite bites.."
           />
-          <i id="searchIcon" className="fa-solid fa-magnifying-glass"></i>
+          <div id="searchIconDiv"><i id="searchIcon" className="fa-solid fa-magnifying-glass"/></div>
         </div>
+        <div id="divRegion">
+            <p >English</p>
+            <img src={india}/>
+          </div>
+          <div id="divAccountInfo" className="navBarDivs"><p className="navBarDivHeads">Hello Aman</p>
+            <p className="navBarDivHeadsMini">Accounts & Lists</p></div>
+            <div id="divReturn" className="navBarDivs"><p className="navBarDivHeads">Return</p>
+            <p className="navBarDivHeadsMini">& Orders</p></div>
         <div>
           <Link to="/"><a id="aSearch" onClick={props.clickHandler}>
             Log Out
           </a></Link>
-         <Link to="/cart"> <i className="fa-solid fa-cart-shopping" /></Link>
+         <Link to="/cart"> <i className="fa-solid fa-cart-shopping" /> Cart</Link>
         </div>
       </div>
+      <div id="divNavBarMini">
+        <ul id="navBarMiniLinks"><li>All</li><li>Fresh</li><li>Grocery and Gourmet foods</li><li>Mobiles</li><li>Pay</li><li>Amazon Pay</li><li>Today's Deals</li><li>Prime</li><li>Best Sellers</li></ul><img src="https://images-eu.ssl-images-amazon.com/images/G/31/prime/ACQ/ho_SWM_400x39_2a1._CB623007921_.jpg"/>
+      </div>
       <div name="offers" id="searchOuter">
-        {/* <div id="search">
-        <div id="offer">
-          <p id="paraOffer">
-            Get<pre className="error"> Flat 50% OFF </pre>on your first order!!!
-          </p>
-        </div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2s2Y5CJo8efJzKpwA1qoqD3fgIC18t_YrqA&usqp=CAU"></img>
-      </div>   */}
-      <img src="https://hamleysgumlet.gumlet.io/banner/16630728501817x747PD%20(1).webp" />
-      <img src="https://cdn.fcglcdn.com/brainbees/images/marketing/d/toys_fest/banner-fisherprice.jpg"/>
-      <img id="lastImg" src="https://www.nepaloffers.com/public/offer/cd8571708784f9e1e7828586c2d989a7" />
+       <img src="https://m.media-amazon.com/images/I/71aq3gNHjEL._SX3000_.jpg" />
+      <img src="https://m.media-amazon.com/images/I/71UHB2VnFAL._SX3000_.jpg"/>
+      <img id="lastImg" src="https://m.media-amazon.com/images/I/71xtcY66oOL._SX3000_.jpg" />
       </div> 
-      <div id="sortFilter" name="sfDiv">
+      {/* <div id="sortFilter" name="sfDiv">
         <select id="selFilter" onChange={Filter}>
           <option min="0" max="13">Filter By</option>
           <option min="0" max="2">Age 0-2 years</option>
@@ -92,7 +102,7 @@ const Restaurants = (props) => {
           <option>Price: High to Low</option>
           <option>Price: Low to High</option>
         </select>
-      </div>
+      </div> */}
       <RestaurantsList matched={Matched} AddtoCart={props.AddtoCart}/>
     </>
   );
