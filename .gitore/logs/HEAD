@@ -1,0 +1,232 @@
+0000000000000000000000000000000000000000 9b34b3e61d003535145587a3e11e05feecaafa1d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661749131 +0530	commit (initial): Initialize project using Create React App
+9b34b3e61d003535145587a3e11e05feecaafa1d 02005147f0e0444a633a915b55c5dc8dc916e81b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661751592 +0530	commit: first commit
+02005147f0e0444a633a915b55c5dc8dc916e81b 0000000000000000000000000000000000000000 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661751606 +0530	Branch: renamed refs/heads/master to refs/heads/main
+0000000000000000000000000000000000000000 02005147f0e0444a633a915b55c5dc8dc916e81b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661751606 +0530	Branch: renamed refs/heads/master to refs/heads/main
+02005147f0e0444a633a915b55c5dc8dc916e81b 02005147f0e0444a633a915b55c5dc8dc916e81b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661751765 +0530	checkout: moving from main to statesAndEvents1
+02005147f0e0444a633a915b55c5dc8dc916e81b fb36030330685b26819321337f1669bc5c7af4ec amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661751844 +0530	commit: states and events 1
+fb36030330685b26819321337f1669bc5c7af4ec fb36030330685b26819321337f1669bc5c7af4ec amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661753513 +0530	checkout: moving from statesAndEvents1 to statesAndEvents2
+fb36030330685b26819321337f1669bc5c7af4ec 8aeecd598fdbad35e5c7997aa9fb764a5bc5d569 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661753551 +0530	commit: states and Events 2
+8aeecd598fdbad35e5c7997aa9fb764a5bc5d569 8aeecd598fdbad35e5c7997aa9fb764a5bc5d569 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661757371 +0530	checkout: moving from statesAndEvents2 to statesAndEvents3
+8aeecd598fdbad35e5c7997aa9fb764a5bc5d569 7606c5af080d6084bcfcb41aa4385065c8c443b8 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661757381 +0530	commit: states and Events 3
+7606c5af080d6084bcfcb41aa4385065c8c443b8 1508f472892d32e80f61989e34dd6e5a0d13dfdb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661757492 +0530	commit: states and Events 3
+1508f472892d32e80f61989e34dd6e5a0d13dfdb 1508f472892d32e80f61989e34dd6e5a0d13dfdb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661760749 +0530	checkout: moving from statesAndEvents3 to statesAndEvents4
+1508f472892d32e80f61989e34dd6e5a0d13dfdb 46d521e3280782e1c327fd8b728c40174e146fba amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661760759 +0530	commit: states and Events 4
+46d521e3280782e1c327fd8b728c40174e146fba fb36030330685b26819321337f1669bc5c7af4ec amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661763875 +0530	checkout: moving from statesAndEvents4 to statesAndEvents1
+fb36030330685b26819321337f1669bc5c7af4ec 8aeecd598fdbad35e5c7997aa9fb764a5bc5d569 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661763953 +0530	checkout: moving from statesAndEvents1 to statesAndEvents2
+8aeecd598fdbad35e5c7997aa9fb764a5bc5d569 1508f472892d32e80f61989e34dd6e5a0d13dfdb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661763995 +0530	checkout: moving from statesAndEvents2 to statesAndEvents3
+1508f472892d32e80f61989e34dd6e5a0d13dfdb 46d521e3280782e1c327fd8b728c40174e146fba amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661764160 +0530	checkout: moving from statesAndEvents3 to statesAndEvents4
+46d521e3280782e1c327fd8b728c40174e146fba 1508f472892d32e80f61989e34dd6e5a0d13dfdb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661764244 +0530	checkout: moving from statesAndEvents4 to statesAndEvents3
+1508f472892d32e80f61989e34dd6e5a0d13dfdb 604db5d2d026351f207f70982d83ce54747d64f0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661764468 +0530	commit: states and Events 3
+604db5d2d026351f207f70982d83ce54747d64f0 46d521e3280782e1c327fd8b728c40174e146fba amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661764480 +0530	checkout: moving from statesAndEvents3 to statesAndEvents4
+46d521e3280782e1c327fd8b728c40174e146fba 604db5d2d026351f207f70982d83ce54747d64f0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661765180 +0530	checkout: moving from statesAndEvents4 to statesAndEvents3
+604db5d2d026351f207f70982d83ce54747d64f0 a64d60c57d0507e88d3796314ca0b2e70de52685 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661766495 +0530	commit: states and Events 3
+a64d60c57d0507e88d3796314ca0b2e70de52685 c6a7a45c4b4d70b656205e4405796793ea6490b7 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661776470 +0530	commit: states and Events 3
+c6a7a45c4b4d70b656205e4405796793ea6490b7 c6a7a45c4b4d70b656205e4405796793ea6490b7 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661832510 +0530	checkout: moving from statesAndEvents3 to todo
+c6a7a45c4b4d70b656205e4405796793ea6490b7 7e7e3fc3a8058f917c5139c4b68be23723e97f45 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661856538 +0530	commit: Todo App
+7e7e3fc3a8058f917c5139c4b68be23723e97f45 7e7e3fc3a8058f917c5139c4b68be23723e97f45 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661856861 +0530	checkout: moving from todo to calculator
+7e7e3fc3a8058f917c5139c4b68be23723e97f45 a2ce5b43b8a956f3055fa945ff050060cd6fb22d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661864781 +0530	commit: Calculator
+a2ce5b43b8a956f3055fa945ff050060cd6fb22d 7e7e3fc3a8058f917c5139c4b68be23723e97f45 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661919860 +0530	checkout: moving from calculator to todo
+7e7e3fc3a8058f917c5139c4b68be23723e97f45 a7c174ca502a86fc92a3e1d39af8e60c2c53f9d5 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661920067 +0530	commit: todo
+a7c174ca502a86fc92a3e1d39af8e60c2c53f9d5 a2ce5b43b8a956f3055fa945ff050060cd6fb22d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661920102 +0530	checkout: moving from todo to calculator
+a2ce5b43b8a956f3055fa945ff050060cd6fb22d 654b3180c7ddf853225f7b2c3d79f8c26abd89fb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661920646 +0530	commit: Calculator
+654b3180c7ddf853225f7b2c3d79f8c26abd89fb 654b3180c7ddf853225f7b2c3d79f8c26abd89fb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661921115 +0530	checkout: moving from calculator to conditionalRendering1
+654b3180c7ddf853225f7b2c3d79f8c26abd89fb b67c77f09408dec62f9faad1e6f86cb61d9af337 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661923929 +0530	commit: Name Suggestion
+b67c77f09408dec62f9faad1e6f86cb61d9af337 b67c77f09408dec62f9faad1e6f86cb61d9af337 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661924028 +0530	checkout: moving from conditionalRendering1 to conditionalRendering2
+b67c77f09408dec62f9faad1e6f86cb61d9af337 f51b1e548264149593a85b79515481260f11c2a0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661924820 +0530	commit: Change Background
+f51b1e548264149593a85b79515481260f11c2a0 f51b1e548264149593a85b79515481260f11c2a0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661924978 +0530	checkout: moving from conditionalRendering2 to conditionalRendering3
+f51b1e548264149593a85b79515481260f11c2a0 e684b7133940d6904c51fa224c1f2f1abd3513ab amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661926439 +0530	commit: Change Background
+e684b7133940d6904c51fa224c1f2f1abd3513ab f51b1e548264149593a85b79515481260f11c2a0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661926449 +0530	checkout: moving from conditionalRendering3 to conditionalRendering2
+f51b1e548264149593a85b79515481260f11c2a0 b67c77f09408dec62f9faad1e6f86cb61d9af337 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661926494 +0530	checkout: moving from conditionalRendering2 to conditionalRendering1
+b67c77f09408dec62f9faad1e6f86cb61d9af337 e684b7133940d6904c51fa224c1f2f1abd3513ab amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661926569 +0530	checkout: moving from conditionalRendering1 to conditionalRendering3
+e684b7133940d6904c51fa224c1f2f1abd3513ab a5c1bc586b1dafc081df7083a84d7eebd49969d6 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661932658 +0530	commit: Change Theme
+a5c1bc586b1dafc081df7083a84d7eebd49969d6 f51b1e548264149593a85b79515481260f11c2a0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661935509 +0530	checkout: moving from conditionalRendering3 to conditionalRendering2
+f51b1e548264149593a85b79515481260f11c2a0 f467d4a61e880286c49e17c05b72641ba8122c76 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661936886 +0530	commit: Change Theme
+f467d4a61e880286c49e17c05b72641ba8122c76 654b3180c7ddf853225f7b2c3d79f8c26abd89fb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661937029 +0530	checkout: moving from conditionalRendering2 to calculator
+654b3180c7ddf853225f7b2c3d79f8c26abd89fb 19e78b5f869d0debe32e2cab015fc9f68306aea8 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661937156 +0530	commit: Calculator
+19e78b5f869d0debe32e2cab015fc9f68306aea8 19e78b5f869d0debe32e2cab015fc9f68306aea8 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661938643 +0530	checkout: moving from calculator to instacart
+19e78b5f869d0debe32e2cab015fc9f68306aea8 a4e0540704c7a498fb2dd114ed721c95eefd47dd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661938809 +0530	commit: instacart
+a4e0540704c7a498fb2dd114ed721c95eefd47dd a4e0540704c7a498fb2dd114ed721c95eefd47dd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661939015 +0530	checkout: moving from instacart to Instacart
+a4e0540704c7a498fb2dd114ed721c95eefd47dd 19e78b5f869d0debe32e2cab015fc9f68306aea8 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661939138 +0530	checkout: moving from Instacart to calculator
+19e78b5f869d0debe32e2cab015fc9f68306aea8 c277bdecc278c413d7e45bec59f3f797b70d6700 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661940098 +0530	commit: calculator
+c277bdecc278c413d7e45bec59f3f797b70d6700 f33403d942315c2da24205d6f173b47968b000bb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661940251 +0530	commit: calculator
+f33403d942315c2da24205d6f173b47968b000bb a4e0540704c7a498fb2dd114ed721c95eefd47dd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661940651 +0530	checkout: moving from calculator to Instacart
+a4e0540704c7a498fb2dd114ed721c95eefd47dd a5c1bc586b1dafc081df7083a84d7eebd49969d6 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661940951 +0530	checkout: moving from Instacart to conditionalRendering3
+a5c1bc586b1dafc081df7083a84d7eebd49969d6 53eba2fecfee27f9bab3c9dcdfef3985bc2b262f amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661941460 +0530	commit: Change Theme
+53eba2fecfee27f9bab3c9dcdfef3985bc2b262f a4e0540704c7a498fb2dd114ed721c95eefd47dd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661942194 +0530	checkout: moving from conditionalRendering3 to Instacart
+a4e0540704c7a498fb2dd114ed721c95eefd47dd 71d730f01c8fe09cd3ab3b66de913ad9a96387ec amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1661952181 +0530	commit: Instacart
+71d730f01c8fe09cd3ab3b66de913ad9a96387ec 71d730f01c8fe09cd3ab3b66de913ad9a96387ec amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662006086 +0530	checkout: moving from Instacart to BMIcalculator
+71d730f01c8fe09cd3ab3b66de913ad9a96387ec 4100b8d76d5761b9599f1f95bbfc08e4db941731 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662013121 +0530	commit: BMI Calculator
+4100b8d76d5761b9599f1f95bbfc08e4db941731 87de88f871aa81dbb2669c20312022cc9ed392eb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662014191 +0530	commit: BMI Calculator
+87de88f871aa81dbb2669c20312022cc9ed392eb 87de88f871aa81dbb2669c20312022cc9ed392eb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662014217 +0530	checkout: moving from BMIcalculator to electricBill
+87de88f871aa81dbb2669c20312022cc9ed392eb b330f330f6c3b2da2e4733506f8c4571bba644cf amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662016370 +0530	commit: Electricity Bill Calculator
+b330f330f6c3b2da2e4733506f8c4571bba644cf 87de88f871aa81dbb2669c20312022cc9ed392eb amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662016980 +0530	checkout: moving from electricBill to BMIcalculator
+87de88f871aa81dbb2669c20312022cc9ed392eb 1769eb7bc95420666875fd2934f01fd95eb88f7e amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662019397 +0530	commit: BMI Calculator
+1769eb7bc95420666875fd2934f01fd95eb88f7e b330f330f6c3b2da2e4733506f8c4571bba644cf amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662019435 +0530	checkout: moving from BMIcalculator to electricBill
+b330f330f6c3b2da2e4733506f8c4571bba644cf b330f330f6c3b2da2e4733506f8c4571bba644cf amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662019477 +0530	checkout: moving from electricBill to EMIcalculator
+b330f330f6c3b2da2e4733506f8c4571bba644cf d91e5632cbf8c4000f091920e65f9ec822cef9bd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662035521 +0530	commit: EMI Calculator
+d91e5632cbf8c4000f091920e65f9ec822cef9bd 1769eb7bc95420666875fd2934f01fd95eb88f7e amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662035722 +0530	checkout: moving from EMIcalculator to BMIcalculator
+1769eb7bc95420666875fd2934f01fd95eb88f7e d91e5632cbf8c4000f091920e65f9ec822cef9bd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662035869 +0530	checkout: moving from BMIcalculator to EMIcalculator
+d91e5632cbf8c4000f091920e65f9ec822cef9bd ca1e097813c51116eb1ab09ea7e3e5b8962d559b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662091372 +0530	commit: EMI calculator
+ca1e097813c51116eb1ab09ea7e3e5b8962d559b 1769eb7bc95420666875fd2934f01fd95eb88f7e amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662091375 +0530	checkout: moving from EMIcalculator to BMIcalculator
+1769eb7bc95420666875fd2934f01fd95eb88f7e ca1e097813c51116eb1ab09ea7e3e5b8962d559b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662096935 +0530	checkout: moving from BMIcalculator to EMIcalculator
+ca1e097813c51116eb1ab09ea7e3e5b8962d559b 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662097349 +0530	commit: EMI calculator
+36b00d30109b471a3848e31ae7493fc8a29287ad 71d730f01c8fe09cd3ab3b66de913ad9a96387ec amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662097351 +0530	checkout: moving from EMIcalculator to Instacart
+71d730f01c8fe09cd3ab3b66de913ad9a96387ec 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662098116 +0530	checkout: moving from Instacart to EMIcalculator
+36b00d30109b471a3848e31ae7493fc8a29287ad 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662098137 +0530	checkout: moving from EMIcalculator to list1
+36b00d30109b471a3848e31ae7493fc8a29287ad 1bbe1d656bf8e50a766fac61164622aed3e307e3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662098679 +0530	commit: lists 1
+1bbe1d656bf8e50a766fac61164622aed3e307e3 1bbe1d656bf8e50a766fac61164622aed3e307e3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662099196 +0530	checkout: moving from list1 to list2
+1bbe1d656bf8e50a766fac61164622aed3e307e3 cd53407af6d9296b980108f92a26e29c91aa8a65 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662101210 +0530	commit: lists 2
+cd53407af6d9296b980108f92a26e29c91aa8a65 57e2f70864e24e221950d841eeb3a71e36778cfd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662104840 +0530	commit: lists 3
+57e2f70864e24e221950d841eeb3a71e36778cfd 57e2f70864e24e221950d841eeb3a71e36778cfd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662104879 +0530	checkout: moving from list2 to list3
+57e2f70864e24e221950d841eeb3a71e36778cfd ee2e922c3df700ff741e152977df1a91c74cb11c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662104929 +0530	commit: lists 3
+ee2e922c3df700ff741e152977df1a91c74cb11c 57e2f70864e24e221950d841eeb3a71e36778cfd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662105085 +0530	checkout: moving from list3 to list2
+57e2f70864e24e221950d841eeb3a71e36778cfd bb34e0a8342e0ad2f2e6154d7f9c8007140f8029 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662105178 +0530	commit: lists 2
+bb34e0a8342e0ad2f2e6154d7f9c8007140f8029 ee2e922c3df700ff741e152977df1a91c74cb11c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662105188 +0530	checkout: moving from list2 to list3
+ee2e922c3df700ff741e152977df1a91c74cb11c ee2e922c3df700ff741e152977df1a91c74cb11c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662105218 +0530	checkout: moving from list3 to list4
+ee2e922c3df700ff741e152977df1a91c74cb11c 51ff673c31ebe6b314bfe1854ff48bf59b13d547 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662107644 +0530	commit: lists 4
+51ff673c31ebe6b314bfe1854ff48bf59b13d547 b5655b930f738c0112ddf571eebba93f1a2850b8 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662110877 +0530	commit: lists 4
+b5655b930f738c0112ddf571eebba93f1a2850b8 ee2e922c3df700ff741e152977df1a91c74cb11c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662116626 +0530	checkout: moving from list4 to list3
+ee2e922c3df700ff741e152977df1a91c74cb11c 1769eb7bc95420666875fd2934f01fd95eb88f7e amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662118368 +0530	checkout: moving from list3 to BMIcalculator
+1769eb7bc95420666875fd2934f01fd95eb88f7e 4c51c81176183fc991d83a7b1f5d2a7bf58ab994 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662118858 +0530	commit: BMIcalculator
+4c51c81176183fc991d83a7b1f5d2a7bf58ab994 c7223b67d4a80142701d81efcafef0270ac63b15 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662119329 +0530	commit: BMIcalculator
+c7223b67d4a80142701d81efcafef0270ac63b15 b5655b930f738c0112ddf571eebba93f1a2850b8 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662119332 +0530	checkout: moving from BMIcalculator to list4
+b5655b930f738c0112ddf571eebba93f1a2850b8 4b9535b35ca0d8e56a79b974581f34355f465b62 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662119429 +0530	commit: lists 4
+4b9535b35ca0d8e56a79b974581f34355f465b62 fead9c1c2750c5da2f07ff631963aa5003c013d3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662120274 +0530	commit: lists 4
+fead9c1c2750c5da2f07ff631963aa5003c013d3 c7223b67d4a80142701d81efcafef0270ac63b15 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662121785 +0530	checkout: moving from list4 to BMIcalculator
+c7223b67d4a80142701d81efcafef0270ac63b15 a7c174ca502a86fc92a3e1d39af8e60c2c53f9d5 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662123141 +0530	checkout: moving from BMIcalculator to todo
+a7c174ca502a86fc92a3e1d39af8e60c2c53f9d5 a7c174ca502a86fc92a3e1d39af8e60c2c53f9d5 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662358237 +0530	checkout: moving from todo to RestaurantApp
+a7c174ca502a86fc92a3e1d39af8e60c2c53f9d5 ea3cb4acde6730c923f5ec83fe8f50863cc7c669 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662438446 +0530	commit: Restaurant App
+ea3cb4acde6730c923f5ec83fe8f50863cc7c669 ea3cb4acde6730c923f5ec83fe8f50863cc7c669 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662438545 +0530	checkout: moving from RestaurantApp to forms
+ea3cb4acde6730c923f5ec83fe8f50863cc7c669 75d3ed20ed878ff933d59149835ab6f9b6f70d53 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662445864 +0530	commit: Forms
+75d3ed20ed878ff933d59149835ab6f9b6f70d53 75d3ed20ed878ff933d59149835ab6f9b6f70d53 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662446086 +0530	checkout: moving from forms to forms2
+75d3ed20ed878ff933d59149835ab6f9b6f70d53 3c70b62bfb6b9118616c7d52ed7c753dd939dccd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662465070 +0530	commit: Forms 2
+3c70b62bfb6b9118616c7d52ed7c753dd939dccd a430bfb438a0db11c0d72daa50195812ab768ae2 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662466444 +0530	commit: Forms 2
+a430bfb438a0db11c0d72daa50195812ab768ae2 375b1b5a2f699b43952161e516e18f28fc0db159 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662466637 +0530	commit: Forms 2
+375b1b5a2f699b43952161e516e18f28fc0db159 375b1b5a2f699b43952161e516e18f28fc0db159 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662524266 +0530	checkout: moving from forms2 to forms3
+375b1b5a2f699b43952161e516e18f28fc0db159 396cf9875a16cb05a0f490a6b90c18bcaf749a7b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662527962 +0530	commit: Forms 3
+396cf9875a16cb05a0f490a6b90c18bcaf749a7b 375b1b5a2f699b43952161e516e18f28fc0db159 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662527981 +0530	checkout: moving from forms3 to forms2
+375b1b5a2f699b43952161e516e18f28fc0db159 6fe7e18dc8b29729564acfd1a6f22607834bcb28 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662528297 +0530	commit: Forms 2
+6fe7e18dc8b29729564acfd1a6f22607834bcb28 75d3ed20ed878ff933d59149835ab6f9b6f70d53 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662528311 +0530	checkout: moving from forms2 to forms
+75d3ed20ed878ff933d59149835ab6f9b6f70d53 6fe7e18dc8b29729564acfd1a6f22607834bcb28 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662528722 +0530	checkout: moving from forms to forms2
+6fe7e18dc8b29729564acfd1a6f22607834bcb28 a35ab8e7e39a032e3d111de4727c6cbbfde6ef5d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662529243 +0530	commit: Forms 2
+a35ab8e7e39a032e3d111de4727c6cbbfde6ef5d 396cf9875a16cb05a0f490a6b90c18bcaf749a7b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662529256 +0530	checkout: moving from forms2 to forms3
+396cf9875a16cb05a0f490a6b90c18bcaf749a7b 977b0d5d22d7f9e391a0a6af52d03bece9f0dea9 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662539354 +0530	commit: Forms 3
+977b0d5d22d7f9e391a0a6af52d03bece9f0dea9 a35ab8e7e39a032e3d111de4727c6cbbfde6ef5d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662539366 +0530	checkout: moving from forms3 to forms2
+a35ab8e7e39a032e3d111de4727c6cbbfde6ef5d 977b0d5d22d7f9e391a0a6af52d03bece9f0dea9 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662539393 +0530	checkout: moving from forms2 to forms3
+977b0d5d22d7f9e391a0a6af52d03bece9f0dea9 a35ab8e7e39a032e3d111de4727c6cbbfde6ef5d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662539435 +0530	checkout: moving from forms3 to forms2
+a35ab8e7e39a032e3d111de4727c6cbbfde6ef5d 977b0d5d22d7f9e391a0a6af52d03bece9f0dea9 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662539563 +0530	checkout: moving from forms2 to forms3
+977b0d5d22d7f9e391a0a6af52d03bece9f0dea9 1d8d60db16ca13ac40ac3ccdc18361dc08a294b7 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662540835 +0530	commit: Forms 3
+1d8d60db16ca13ac40ac3ccdc18361dc08a294b7 1d8d60db16ca13ac40ac3ccdc18361dc08a294b7 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662541128 +0530	checkout: moving from forms3 to expenseTracker
+1d8d60db16ca13ac40ac3ccdc18361dc08a294b7 2e7e3e92d6a8aa14c88a9782d9d2381859cd6621 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662617859 +0530	commit: Expense Tracker
+2e7e3e92d6a8aa14c88a9782d9d2381859cd6621 87a4083f3ff60cec2465f30dc4e74a2a760d007a amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662622044 +0530	commit: Expense Tracker
+87a4083f3ff60cec2465f30dc4e74a2a760d007a 7de67cb043c7346d9671bba069a8bce590d401f1 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662622964 +0530	commit: Expense Tracker
+7de67cb043c7346d9671bba069a8bce590d401f1 738db18ea31212d42143c01167c49b3d3f78e543 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662624683 +0530	commit: Expense Tracker
+738db18ea31212d42143c01167c49b3d3f78e543 3e1da72e9de376d1aa4b457bc17fc71a4489b748 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662626968 +0530	commit: Expense Tracker
+3e1da72e9de376d1aa4b457bc17fc71a4489b748 ea3cb4acde6730c923f5ec83fe8f50863cc7c669 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662626978 +0530	checkout: moving from expenseTracker to RestaurantApp
+ea3cb4acde6730c923f5ec83fe8f50863cc7c669 5c707d2c8dae3324b94e3ceba43d927362338a9c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662633912 +0530	commit: Restaurant App
+5c707d2c8dae3324b94e3ceba43d927362338a9c a4e0540704c7a498fb2dd114ed721c95eefd47dd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662633922 +0530	checkout: moving from RestaurantApp to instacart
+a4e0540704c7a498fb2dd114ed721c95eefd47dd 5c707d2c8dae3324b94e3ceba43d927362338a9c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662634004 +0530	checkout: moving from instacart to RestaurantApp
+5c707d2c8dae3324b94e3ceba43d927362338a9c 326b9ee72d558fc5a82ab9143fd9b7150f71ab75 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662639846 +0530	commit: Restaurant App
+326b9ee72d558fc5a82ab9143fd9b7150f71ab75 f467d4a61e880286c49e17c05b72641ba8122c76 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662639848 +0530	checkout: moving from RestaurantApp to conditionalRendering2
+f467d4a61e880286c49e17c05b72641ba8122c76 53eba2fecfee27f9bab3c9dcdfef3985bc2b262f amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662639887 +0530	checkout: moving from conditionalRendering2 to conditionalRendering3
+53eba2fecfee27f9bab3c9dcdfef3985bc2b262f b67c77f09408dec62f9faad1e6f86cb61d9af337 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662639953 +0530	checkout: moving from conditionalRendering3 to conditionalRendering1
+b67c77f09408dec62f9faad1e6f86cb61d9af337 326b9ee72d558fc5a82ab9143fd9b7150f71ab75 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662640036 +0530	checkout: moving from conditionalRendering1 to RestaurantApp
+326b9ee72d558fc5a82ab9143fd9b7150f71ab75 6a45bb67b4cad42b40cbb0e77d1b22bada5a2a9a amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662641339 +0530	commit: Restaurant App
+6a45bb67b4cad42b40cbb0e77d1b22bada5a2a9a dda7e205e9b9a70eef253f56a8f038497cfe5034 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662724499 +0530	commit: Restaurant App
+dda7e205e9b9a70eef253f56a8f038497cfe5034 9c63947b54691b0a13842c105ed70a76095e1885 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662725732 +0530	commit: Restaurant App
+9c63947b54691b0a13842c105ed70a76095e1885 9c63947b54691b0a13842c105ed70a76095e1885 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662725930 +0530	checkout: moving from RestaurantApp to Router1
+9c63947b54691b0a13842c105ed70a76095e1885 9c63947b54691b0a13842c105ed70a76095e1885 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662726114 +0530	checkout: moving from Router1 to RestaurantApp
+9c63947b54691b0a13842c105ed70a76095e1885 63763bd7c201ca5581119038775cb44da1632fd3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662726361 +0530	commit: Restaurant App
+63763bd7c201ca5581119038775cb44da1632fd3 9c63947b54691b0a13842c105ed70a76095e1885 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662726377 +0530	checkout: moving from RestaurantApp to Router1
+9c63947b54691b0a13842c105ed70a76095e1885 0534849af136f8b9e1ce24c772987ba00704c901 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662726428 +0530	commit: Restaurant App
+0534849af136f8b9e1ce24c772987ba00704c901 63763bd7c201ca5581119038775cb44da1632fd3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662726431 +0530	checkout: moving from Router1 to RestaurantApp
+63763bd7c201ca5581119038775cb44da1632fd3 0534849af136f8b9e1ce24c772987ba00704c901 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662726451 +0530	checkout: moving from RestaurantApp to Router1
+0534849af136f8b9e1ce24c772987ba00704c901 d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662957201 +0530	commit: Router 1
+d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662968164 +0530	checkout: moving from Router1 to Router2
+d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662968171 +0530	commit: Router 2
+ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 c7223b67d4a80142701d81efcafef0270ac63b15 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662968264 +0530	checkout: moving from Router2 to BMIcalculator
+c7223b67d4a80142701d81efcafef0270ac63b15 ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662968530 +0530	checkout: moving from BMIcalculator to Router2
+ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662970875 +0530	checkout: moving from Router2 to Router1
+d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662970933 +0530	checkout: moving from Router1 to Router2
+ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662973225 +0530	checkout: moving from Router2 to Router3
+ecd3a8be8c2df83add62ed4cb2a5b6c31844f6e0 935d7a4347308fe13b22790204135ea0dad5878a amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662973235 +0530	commit: Router 3
+935d7a4347308fe13b22790204135ea0dad5878a 81d6b24012415a3241ae2f11391c5c65fadf6800 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662986683 +0530	commit: Router 3
+81d6b24012415a3241ae2f11391c5c65fadf6800 d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662986688 +0530	checkout: moving from Router3 to Router1
+d71ee9f46ebfd7b4fbe86472dce94972ab1f3064 81d6b24012415a3241ae2f11391c5c65fadf6800 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662986728 +0530	checkout: moving from Router1 to Router3
+81d6b24012415a3241ae2f11391c5c65fadf6800 0073a9a9010559af133b11556aca4e40265850f6 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662987409 +0530	commit: Router 3
+0073a9a9010559af133b11556aca4e40265850f6 3e1da72e9de376d1aa4b457bc17fc71a4489b748 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662987411 +0530	checkout: moving from Router3 to expenseTracker
+3e1da72e9de376d1aa4b457bc17fc71a4489b748 0073a9a9010559af133b11556aca4e40265850f6 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662987533 +0530	checkout: moving from expenseTracker to Router3
+0073a9a9010559af133b11556aca4e40265850f6 b8c98203166277dbb087c6372d85e9ecfe7e5903 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662988302 +0530	commit: Router 3
+b8c98203166277dbb087c6372d85e9ecfe7e5903 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662988322 +0530	checkout: moving from Router3 to EMIcalculator
+36b00d30109b471a3848e31ae7493fc8a29287ad b8c98203166277dbb087c6372d85e9ecfe7e5903 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662988512 +0530	checkout: moving from EMIcalculator to Router3
+b8c98203166277dbb087c6372d85e9ecfe7e5903 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662988587 +0530	checkout: moving from Router3 to EMIcalculator
+36b00d30109b471a3848e31ae7493fc8a29287ad b8c98203166277dbb087c6372d85e9ecfe7e5903 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1662988724 +0530	checkout: moving from EMIcalculator to Router3
+b8c98203166277dbb087c6372d85e9ecfe7e5903 b8c98203166277dbb087c6372d85e9ecfe7e5903 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663040143 +0530	checkout: moving from Router3 to Router3
+b8c98203166277dbb087c6372d85e9ecfe7e5903 2e9071381bbe1a95aadf7f974a5cef5ff175508b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663052615 +0530	commit: Router 3
+2e9071381bbe1a95aadf7f974a5cef5ff175508b 2e9071381bbe1a95aadf7f974a5cef5ff175508b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663052644 +0530	checkout: moving from Router3 to Router4
+2e9071381bbe1a95aadf7f974a5cef5ff175508b 63934f0cb95b1394813bb13d44a392475f610133 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663052742 +0530	commit: Router 4
+63934f0cb95b1394813bb13d44a392475f610133 2e9071381bbe1a95aadf7f974a5cef5ff175508b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663052750 +0530	checkout: moving from Router4 to Router3
+2e9071381bbe1a95aadf7f974a5cef5ff175508b 63934f0cb95b1394813bb13d44a392475f610133 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663052765 +0530	checkout: moving from Router3 to Router4
+63934f0cb95b1394813bb13d44a392475f610133 313a5546070a5550447840fe1e59d35925d3c55d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663060197 +0530	commit: Router 4
+313a5546070a5550447840fe1e59d35925d3c55d 2e9071381bbe1a95aadf7f974a5cef5ff175508b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663060209 +0530	checkout: moving from Router4 to Router3
+2e9071381bbe1a95aadf7f974a5cef5ff175508b 5f9133091ca28be91da7fc006bacd0f645118d60 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663060489 +0530	commit: Router 3
+5f9133091ca28be91da7fc006bacd0f645118d60 313a5546070a5550447840fe1e59d35925d3c55d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663060496 +0530	checkout: moving from Router3 to Router4
+313a5546070a5550447840fe1e59d35925d3c55d 7bfbee845b12802d4e0e3418d1914c24493546a7 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663068950 +0530	commit: Router 4
+7bfbee845b12802d4e0e3418d1914c24493546a7 5f9133091ca28be91da7fc006bacd0f645118d60 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663130803 +0530	checkout: moving from Router4 to Router3
+5f9133091ca28be91da7fc006bacd0f645118d60 5f9133091ca28be91da7fc006bacd0f645118d60 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663131178 +0530	checkout: moving from Router3 to Memo1
+5f9133091ca28be91da7fc006bacd0f645118d60 efbf8a4d9e2bd62c39382606814c069133bbd30c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663132626 +0530	commit: Memo 1
+efbf8a4d9e2bd62c39382606814c069133bbd30c efbf8a4d9e2bd62c39382606814c069133bbd30c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663132704 +0530	checkout: moving from Memo1 to Memo2
+efbf8a4d9e2bd62c39382606814c069133bbd30c 6bdfbfec83fa6369916af02dfe93d6dfabcf9245 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663133636 +0530	commit: Memo 2
+6bdfbfec83fa6369916af02dfe93d6dfabcf9245 6bdfbfec83fa6369916af02dfe93d6dfabcf9245 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663133714 +0530	checkout: moving from Memo2 to CurrencyConvertor
+6bdfbfec83fa6369916af02dfe93d6dfabcf9245 15d33eb434231532555195a06427277108dc0c8b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663139350 +0530	commit: Currency Convertor
+15d33eb434231532555195a06427277108dc0c8b 15d33eb434231532555195a06427277108dc0c8b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663139675 +0530	checkout: moving from CurrencyConvertor to TextUtility
+15d33eb434231532555195a06427277108dc0c8b 67466442bebd6f5705a1cde7d5e1637595fd7dad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663141315 +0530	commit: Text Utility
+67466442bebd6f5705a1cde7d5e1637595fd7dad 67466442bebd6f5705a1cde7d5e1637595fd7dad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663141380 +0530	checkout: moving from TextUtility to NumberToWord
+67466442bebd6f5705a1cde7d5e1637595fd7dad a543dbfc15b90d747cb8ed122f14ab541b85473c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663142479 +0530	commit: Number to Word
+a543dbfc15b90d747cb8ed122f14ab541b85473c 7bfbee845b12802d4e0e3418d1914c24493546a7 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146239 +0530	checkout: moving from NumberToWord to Router4
+7bfbee845b12802d4e0e3418d1914c24493546a7 efbf8a4d9e2bd62c39382606814c069133bbd30c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146286 +0530	checkout: moving from Router4 to Memo1
+efbf8a4d9e2bd62c39382606814c069133bbd30c 6bdfbfec83fa6369916af02dfe93d6dfabcf9245 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146322 +0530	checkout: moving from Memo1 to Memo2
+6bdfbfec83fa6369916af02dfe93d6dfabcf9245 efbf8a4d9e2bd62c39382606814c069133bbd30c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146736 +0530	checkout: moving from Memo2 to Memo1
+efbf8a4d9e2bd62c39382606814c069133bbd30c 15d33eb434231532555195a06427277108dc0c8b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146753 +0530	checkout: moving from Memo1 to CurrencyConvertor
+15d33eb434231532555195a06427277108dc0c8b 67466442bebd6f5705a1cde7d5e1637595fd7dad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146780 +0530	checkout: moving from CurrencyConvertor to TextUtility
+67466442bebd6f5705a1cde7d5e1637595fd7dad a543dbfc15b90d747cb8ed122f14ab541b85473c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146807 +0530	checkout: moving from TextUtility to NumberToWord
+a543dbfc15b90d747cb8ed122f14ab541b85473c 44e6cd6a05a797e68212e540da6e1b0fa72e28b0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663146880 +0530	commit: Number to Word
+44e6cd6a05a797e68212e540da6e1b0fa72e28b0 6bdfbfec83fa6369916af02dfe93d6dfabcf9245 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663151789 +0530	checkout: moving from NumberToWord to Memo2
+6bdfbfec83fa6369916af02dfe93d6dfabcf9245 15d33eb434231532555195a06427277108dc0c8b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663152136 +0530	checkout: moving from Memo2 to CurrencyConvertor
+15d33eb434231532555195a06427277108dc0c8b ee2e922c3df700ff741e152977df1a91c74cb11c amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663157305 +0530	checkout: moving from CurrencyConvertor to list3
+ee2e922c3df700ff741e152977df1a91c74cb11c 44e6cd6a05a797e68212e540da6e1b0fa72e28b0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663159129 +0530	checkout: moving from list3 to NumberToWord
+44e6cd6a05a797e68212e540da6e1b0fa72e28b0 44e6cd6a05a797e68212e540da6e1b0fa72e28b0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663159147 +0530	checkout: moving from NumberToWord to SweetShop
+44e6cd6a05a797e68212e540da6e1b0fa72e28b0 78b8ef2c4626b83f58186c1b4b2217196e65219d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663218069 +0530	commit: Sweet Shop
+78b8ef2c4626b83f58186c1b4b2217196e65219d 63763bd7c201ca5581119038775cb44da1632fd3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663218072 +0530	checkout: moving from SweetShop to RestaurantApp
+63763bd7c201ca5581119038775cb44da1632fd3 78b8ef2c4626b83f58186c1b4b2217196e65219d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663218089 +0530	checkout: moving from RestaurantApp to SweetShop
+78b8ef2c4626b83f58186c1b4b2217196e65219d 63763bd7c201ca5581119038775cb44da1632fd3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663218101 +0530	checkout: moving from SweetShop to RestaurantApp
+63763bd7c201ca5581119038775cb44da1632fd3 44e6cd6a05a797e68212e540da6e1b0fa72e28b0 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663220087 +0530	checkout: moving from RestaurantApp to NumberToWord
+44e6cd6a05a797e68212e540da6e1b0fa72e28b0 63763bd7c201ca5581119038775cb44da1632fd3 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663220146 +0530	checkout: moving from NumberToWord to RestaurantApp
+63763bd7c201ca5581119038775cb44da1632fd3 6a802b1fc9f4bc52c64906f4cdc7b3a5249e9cde amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663238938 +0530	commit: Restaurant App
+6a802b1fc9f4bc52c64906f4cdc7b3a5249e9cde 78b8ef2c4626b83f58186c1b4b2217196e65219d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663238943 +0530	checkout: moving from RestaurantApp to SweetShop
+78b8ef2c4626b83f58186c1b4b2217196e65219d 36f656f317b12e52d556f1643a189e3e60f0bedd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663586526 +0530	commit: Sweetstore App
+36f656f317b12e52d556f1643a189e3e60f0bedd 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663586606 +0530	checkout: moving from SweetShop to EMIcalculator
+36b00d30109b471a3848e31ae7493fc8a29287ad 36b00d30109b471a3848e31ae7493fc8a29287ad amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663593983 +0530	checkout: moving from EMIcalculator to ReactTest
+36b00d30109b471a3848e31ae7493fc8a29287ad 3d114d7d36862c96bd830aca8a2c0ebfb725990b amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663594001 +0530	commit: React Test
+3d114d7d36862c96bd830aca8a2c0ebfb725990b 67bf7c463e0a56b78adf25b68afbb8d97157971a amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663647579 +0530	commit: React Test
+67bf7c463e0a56b78adf25b68afbb8d97157971a 36f656f317b12e52d556f1643a189e3e60f0bedd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663647582 +0530	checkout: moving from ReactTest to SweetShop
+36f656f317b12e52d556f1643a189e3e60f0bedd 67bf7c463e0a56b78adf25b68afbb8d97157971a amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663647692 +0530	checkout: moving from SweetShop to ReactTest
+67bf7c463e0a56b78adf25b68afbb8d97157971a 9e6a2962f3c4339c750f9f1cc00a5a2a66c5bb1f amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663648178 +0530	commit: React Test
+9e6a2962f3c4339c750f9f1cc00a5a2a66c5bb1f 36f656f317b12e52d556f1643a189e3e60f0bedd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663648179 +0530	checkout: moving from ReactTest to SweetShop
+36f656f317b12e52d556f1643a189e3e60f0bedd b12617bf5e903845bf0b51c95cad162d0610a079 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663652269 +0530	commit: Sweet Shop
+b12617bf5e903845bf0b51c95cad162d0610a079 5f9133091ca28be91da7fc006bacd0f645118d60 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663652693 +0530	checkout: moving from SweetShop to Router3
+5f9133091ca28be91da7fc006bacd0f645118d60 5f9133091ca28be91da7fc006bacd0f645118d60 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663668985 +0530	checkout: moving from Router3 to BlogApp
+5f9133091ca28be91da7fc006bacd0f645118d60 520abe4b2742ed04f34120ed01d52c82e3a99e59 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663668997 +0530	commit: Blog App
+520abe4b2742ed04f34120ed01d52c82e3a99e59 b4adc38d30f43181095a287ad394faaf1097fcf4 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663670827 +0530	commit: Blog App
+b4adc38d30f43181095a287ad394faaf1097fcf4 b330f330f6c3b2da2e4733506f8c4571bba644cf amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663674018 +0530	checkout: moving from BlogApp to electricBill
+b330f330f6c3b2da2e4733506f8c4571bba644cf b330f330f6c3b2da2e4733506f8c4571bba644cf amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663676785 +0530	checkout: moving from electricBill to ColorPicker
+b330f330f6c3b2da2e4733506f8c4571bba644cf 144469620d255bf645d65d0e9de5f2aee03396fd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663676803 +0530	commit: Color Picker
+144469620d255bf645d65d0e9de5f2aee03396fd ead12a8acee2a5f1690953db82920f5031ee3b7e amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663676834 +0530	commit: Color Picker
+ead12a8acee2a5f1690953db82920f5031ee3b7e ff7c6cca6c5f8f445a6b90777a03274934a9540d amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663677212 +0530	commit: Color Picker
+ff7c6cca6c5f8f445a6b90777a03274934a9540d 439ba775bfe6e3ac773c6507b410b57cede33328 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663679013 +0530	commit: Color Picker
+439ba775bfe6e3ac773c6507b410b57cede33328 9e6a2962f3c4339c750f9f1cc00a5a2a66c5bb1f amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663679025 +0530	checkout: moving from ColorPicker to ReactTest
+9e6a2962f3c4339c750f9f1cc00a5a2a66c5bb1f bbb26806540c32d0c718002222df355bcb33992f amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663732237 +0530	commit: React Test
+bbb26806540c32d0c718002222df355bcb33992f b12617bf5e903845bf0b51c95cad162d0610a079 amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663732241 +0530	checkout: moving from ReactTest to SweetShop
+b12617bf5e903845bf0b51c95cad162d0610a079 2c4849d31d0422d33ecfa1509c5043c20656f0cd amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663735147 +0530	commit: Sweet Shop
+2c4849d31d0422d33ecfa1509c5043c20656f0cd b330f330f6c3b2da2e4733506f8c4571bba644cf amanjaiswal-cedcoss <amanjaiswal@cedcoss.com> 1663735151 +0530	checkout: moving from SweetShop to electricBill
+                                                                                                                                                                                                                                                                                                                                                                    

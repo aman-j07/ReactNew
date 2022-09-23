@@ -1,0 +1,116 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = https://github.com/amanjaiswal-cedcoss/ReactNew
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "statesAndEvents1"]
+	remote = origin
+	merge = refs/heads/statesAndEvents1
+[branch "statesAndEvents2"]
+	remote = origin
+	merge = refs/heads/statesAndEvents2
+[branch "statesAndEvents3"]
+	remote = origin
+	merge = refs/heads/statesAndEvents3
+[branch "statesAndEvents4"]
+	remote = origin
+	merge = refs/heads/statesAndEvents4
+[branch "todo"]
+	remote = origin
+	merge = refs/heads/todo
+[branch "calculator"]
+	remote = origin
+	merge = refs/heads/calculator
+[branch "conditionalRendering1"]
+	remote = origin
+	merge = refs/heads/conditionalRendering1
+[branch "conditionalRendering2"]
+	remote = origin
+	merge = refs/heads/conditionalRendering2
+[branch "conditionalRendering3"]
+	remote = origin
+	merge = refs/heads/conditionalRendering3
+[branch "Instacart"]
+	remote = origin
+	merge = refs/heads/Instacart
+[branch "BMIcalculator"]
+	remote = origin
+	merge = refs/heads/BMIcalculator
+[branch "electricBill"]
+	remote = origin
+	merge = refs/heads/electricBill
+[branch "EMIcalculator"]
+	remote = origin
+	merge = refs/heads/EMIcalculator
+[branch "list1"]
+	remote = origin
+	merge = refs/heads/list1
+[branch "list2"]
+	remote = origin
+	merge = refs/heads/list2
+[branch "list3"]
+	remote = origin
+	merge = refs/heads/list3
+[branch "list4"]
+	remote = origin
+	merge = refs/heads/list4
+[branch "RestaurantApp"]
+	remote = origin
+	merge = refs/heads/RestaurantApp
+[branch "forms"]
+	remote = origin
+	merge = refs/heads/forms
+[branch "forms2"]
+	remote = origin
+	merge = refs/heads/forms2
+[branch "forms3"]
+	remote = origin
+	merge = refs/heads/forms3
+[branch "expenseTracker"]
+	remote = origin
+	merge = refs/heads/expenseTracker
+[branch "Router1"]
+	remote = origin
+	merge = refs/heads/Router1
+[branch "Router2"]
+	remote = origin
+	merge = refs/heads/Router2
+[branch "Router3"]
+	remote = origin
+	merge = refs/heads/Router3
+[branch "Router4"]
+	remote = origin
+	merge = refs/heads/Router4
+[branch "Memo1"]
+	remote = origin
+	merge = refs/heads/Memo1
+[branch "Memo2"]
+	remote = origin
+	merge = refs/heads/Memo2
+[branch "CurrencyConvertor"]
+	remote = origin
+	merge = refs/heads/CurrencyConvertor
+[branch "TextUtility"]
+	remote = origin
+	merge = refs/heads/TextUtility
+[branch "NumberToWord"]
+	remote = origin
+	merge = refs/heads/NumberToWord
+[branch "SweetShop"]
+	remote = origin
+	merge = refs/heads/SweetShop
+[branch "ReactTest"]
+	remote = origin
+	merge = refs/heads/ReactTest
+[branch "BlogApp"]
+	remote = origin
+	merge = refs/heads/BlogApp
+[branch "ColorPicker"]
+	remote = origin
+	merge = refs/heads/ColorPicker
